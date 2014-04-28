@@ -1,0 +1,5 @@
+package linker;
+
+public class LinkList<G> {
+
+}

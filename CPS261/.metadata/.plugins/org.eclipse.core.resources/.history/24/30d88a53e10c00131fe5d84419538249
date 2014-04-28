@@ -1,0 +1,126 @@
+package fileio;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Concat {
+
+	public void copy(InputStream is, PrintStream ps) {
+
+		Scanner infileScanner = new Scanner(is);
+		while (infileScanner.hasNext()) {
+			String temp = (String) infileScanner.nextLine();
+			ps.println(is + " " + temp);
+		}
+		infileScanner.close();
+	}
+
+	void concat(String[] inFiles, int numInputs, String outFile) {
+		File myFile = new File(outFile);
+		Scanner inScanner = new Scanner(System.in);
+		if (myFile == null || !(myFile.canWrite())) {
+			System.out.println("Output file is ether null or can't be opened ");
+		}
+		try {
+			if (numInputs != 0) {
+				PrintWriter outPrintWriter = new PrintWriter(
+						new FileOutputStream(myFile, true));
+				for (int i = 0; i < inFiles.length; i++) {
+					File infile = new File(inFiles[i]);
+					if (!infile.canRead()) {
+						throw new RuntimeException("Unable to open "
+								+ inFiles[i]);
+					} else if (!infile.toString().contains(".java")
+							|| !infile.toString().contains(".txt"))
+						throw new RuntimeException(
+								"File does not contain the right extention ");
+					copy(new FileInputStream(infile), new PrintStream(myFile));
+				}
+			}
+			else if (numInputs == 0) {
+				String[] infiles = new String[3];
+				for(int i = 0; i < infiles.length; ++i){
+					System.out.println("Enter the " + (i+1) +" file name ");
+					infiles[i] = inScanner.next();
+				}
+				PrintWriter outPrintWriter = new PrintWriter(
+						new FileOutputStream(myFile, true));
+				for (int i = 0; i < infiles.length; i++) {
+					File infile = new File(infiles[i]);
+					if (!infile.canRead()) {
+						throw new RuntimeException("Unable to open "
+								+ infiles[i]);
+					} else if (!infile.toString().contains(".java")
+							|| !infile.toString().contains(".txt"))
+						throw new RuntimeException(
+								"File does not contain the right extention ");
+					copy(new FileInputStream(infile), new PrintStream(myFile));
+				}
+			}
+
+		} catch (FileNotFoundException e) {
+		}
+
+		// if outFile = = null, or "outFile" can't be opened then write output
+		// the screen.
+		// otherwise, create an output file associated with the name "outFile"
+
+		// Using your "copy" routine defined above, copy "numInputs" of files
+		// from the inFiles array to your
+		// output file (or screen)
+
+		// If any of the input files can't be opened, throw a RuntimeException
+		// with a message like:
+		// "Unable to open: file_1.txt
+
+		// All input files should have a suffix of either ".java" or ".txt". If
+		// a file is found without one of these 2
+		// suffixes, throw a RuntimeException with a message like:
+		// ("Input files for Concat must have either a .java or .txt suffix: file_1.bad"
+		// Don't forget to close your input and output files at appropriate
+		// places.
+		
+
+	}
+	 public void process(String[] args)
+	    {
+	     switch(args.length)
+	       {
+	       case 0:
+	           System.out.println("No input files, defaulting to reading from the keyboard and writing to the screen");
+	           concat(args, 0, null);
+	           break;
+	       case 1:
+	           System.out.println("No output file, defaulting to writing to the screen");
+	           concat(args,  1, null);
+	           break;
+	       default:
+	           concat(args,  args.length-1, args[args.length-1]);
+	           break;
+	       }    
+	    }
+	public static void main(String[] args) {
+		Concat concat = new Concat();
+        try
+        {
+            concat.process(args);
+        }
+        catch (RuntimeException e)
+        {
+            // Possible errors:
+            // An input file that doesn't end with .java or .txt
+            // An input file that doesn't open properly.
+            // Trouble creating the output file
+            
+            System.out.println(" Error in Concat:"+e);
+        }
+    }
+		
+}
+

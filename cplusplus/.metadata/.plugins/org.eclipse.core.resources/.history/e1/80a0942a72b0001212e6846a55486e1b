@@ -1,0 +1,30 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: brian
+ */
+#include "phoneNumber.h"
+
+
+
+int main(int argc, char **argv) {
+
+	phoneNumber myNumber;
+
+	do {
+	   try{
+		cout << "Enter your phone number ";
+		   cin >> myNumber;
+		cout << myNumber;
+		break;
+	   }catch (exception& e) {
+		  cout << e.what() << endl;
+	}
+
+	} while (true);
+}
+
+
+
+

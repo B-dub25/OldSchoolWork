@@ -1,0 +1,133 @@
+package doublyLinkedList;
+
+import java.util.NoSuchElementException;
+
+public class DoublyLinkedList {
+
+	private class Node {
+
+		private Node nextedLink;
+		private Node previousLink;
+		String data;
+
+		private Node() {
+			nextedLink = null;
+			previousLink = null;
+			data = "";
+		}
+
+		private Node(String info, Node previous, Node next) {
+			data = info;
+			previousLink = previous;
+			nextedLink = next;
+		}
+	}
+
+	private Node headNode;
+
+	public DoublyLinkedList() {
+
+		headNode = null;
+	}
+
+	public void push(String info) {
+
+		Node tempNode = new Node(info, null, headNode);
+		if (headNode != null) {
+			headNode.previousLink = tempNode;
+		}
+		headNode = tempNode;
+	}
+
+	public void pushBack(String info) {
+
+		if (headNode == null)
+			push(info);
+		else {
+
+			Node currentNode = headNode;
+
+			while (currentNode.nextedLink != null)
+				currentNode = currentNode.nextedLink;
+
+			currentNode.nextedLink = new Node(info, currentNode, null);
+		}
+	}
+
+	public void insert(String info) {
+
+		if (headNode != null && headNode.data.compareTo(info) < 0)
+			pushBack(info);
+		
+		else {
+
+			Node current = headNode;
+
+			while (current != null && (current.data.compareTo(info) > 0))
+				current = current.nextedLink;
+
+			if (current != null)
+				current.previousLink.nextedLink = new Node(info,
+						current.previousLink, current);
+			else
+				pushBack(info);
+		}
+	}
+
+	public void print() {
+
+		Node current = headNode;
+
+		while (current != null) {
+			System.out.println(current.data);
+			current = current.nextedLink;
+		}
+
+	}
+
+	public void pop() {
+
+		if (headNode == null)
+			throw new NoSuchElementException("empty list");
+		headNode.nextedLink.previousLink = null;
+		headNode = headNode.nextedLink;
+	}
+
+	public boolean remove(String target) {
+
+		if (headNode == null)
+			throw new NoSuchElementException("Empty list ");
+		else if (headNode.data.compareTo(target) == 0){
+			pop();
+		 return true;
+		}
+		
+		Node current = headNode;
+		while (current != null && current.data.compareTo(target) != 0)
+			current = current.nextedLink;
+
+		if (current == null)
+			return false;
+		
+		else {
+			current.previousLink.nextedLink = current.nextedLink;
+			current = current.nextedLink;
+			return true;
+		}
+	}
+	
+	public void sort() {
+		
+		if(headNode != null){
+		   DoublyLinkedList list = new DoublyLinkedList();
+		   Node currentNode = headNode;
+		  
+		while(currentNode != null)
+		{
+			list.insert(currentNode.data);
+			currentNode = currentNode.nextedLink;
+		}
+		headNode = list.headNode;
+		}
+	}
+}

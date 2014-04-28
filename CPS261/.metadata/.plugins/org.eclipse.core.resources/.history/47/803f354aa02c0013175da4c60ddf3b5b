@@ -1,0 +1,88 @@
+package doublyLink;
+
+import java.awt.geom.CubicCurve2D;
+
+import org.omg.CORBA.PRIVATE_MEMBER;
+
+public class DoublyLinkedList {
+	
+	private class Node{
+		
+		String dataString;
+		private Node nextLink;
+		private Node previousLink;
+		
+		private Node() {
+			dataString = "";
+			nextLink = null;
+			previousLink = null;
+		}
+		
+		private Node(String info, Node previous , Node next){
+			dataString = info;
+			previousLink = previous;
+			nextLink = next;
+		}
+		
+	}
+
+	private Node headLink;
+	
+	public DoublyLinkedList() {
+		headLink = null;
+	}
+	
+	public DoublyLinkedList(String info){
+		
+		headLink = new Node(info, null, headLink);
+	}
+	
+	public void push(String info) {
+		
+		Node tempNode = new Node(info, null, headLink);
+		
+		if(headLink != null){
+			
+			headLink.previousLink = tempNode;
+		}
+		headLink = tempNode;
+	}
+	
+	public void pushBack(String info){
+		if(headLink == null)
+			push(info);
+		else{
+		Node current = headLink;
+		
+		while(current.nextLink != null)
+			current = current.nextLink;
+		
+		current.nextLink = new Node(info, current, null);
+		}
+	}
+	public void print() {
+		
+		Node currentNode = headLink;
+		
+		while(currentNode != null){
+			System.out.println(currentNode.dataString);
+			currentNode = currentNode.nextLink;
+		}	
+	}
+	
+	public void insert(String info){
+		
+		if(headLink == null)
+			push(info);
+		else{
+			
+			Node currentNode = headLink;
+			while(currentNode != null && (currentNode.dataString.compareTo(info) > 0))
+				currentNode = currentNode.nextLink;
+		
+			   
+			   Node tempNode = new Node(info, currentNode.previousLink, currentNode);
+			   currentNode = tempNode;
+		}
+	}
+}

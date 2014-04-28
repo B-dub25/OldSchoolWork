@@ -1,0 +1,15 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Dec 7, 2013
+ *      Author: brundel
+ */
+#include "miniList.h"
+
+
+int main(){
+
+	miniList<string> list;
+
+	return 0;
+}

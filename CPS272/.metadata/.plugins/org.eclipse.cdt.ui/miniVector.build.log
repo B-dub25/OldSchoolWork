@@ -1,0 +1,7 @@
+13:07:41 **** Clean-only build of configuration Debug for project miniVector ****
+make clean 
+rm -rf  ./driver.o  ./driver.d  miniVector
+ 
+
+13:07:41 Build Finished (took 71ms)
+

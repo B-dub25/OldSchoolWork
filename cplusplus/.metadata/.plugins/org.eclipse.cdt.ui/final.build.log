@@ -1,0 +1,17 @@
+15:01:05 **** Incremental Build of configuration Debug for project final ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘bool pali(std::vector<int>&)’:
+../driver.cpp:18:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../driver.cpp
+ 
+Building target: final
+Invoking: Cross G++ Linker
+g++  -o "final"  ./driver.o   
+Finished building target: final
+ 
+
+15:01:06 Build Finished (took 308ms)
+

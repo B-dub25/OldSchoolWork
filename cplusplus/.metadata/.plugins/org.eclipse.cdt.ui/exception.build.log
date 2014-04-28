@@ -1,0 +1,7 @@
+17:10:30 **** Clean-only build of configuration Debug for project exception ****
+make clean 
+rm -rf  ./DateForm.o ./except.o  ./DateForm.d ./except.d  exception
+ 
+
+17:10:30 Build Finished (took 215ms)
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="2" timestamp="1365303824348" analysisTimestamp="1365303823956" release="">
+  <Project projectName="fraction">
+    <Jar>/home/brian/javaprogs/fraction/build/classes/fraction/Fraction.class</Jar>
+    <AuxClasspathEntry>/home/brian/javaprogs/fraction/build/classes</AuxClasspathEntry>
+    <SrcDir>/home/brian/javaprogs/fraction/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="fraction.Fraction">
+      <SourceLine classname="fraction.Fraction" sourcefile="Fraction.java" sourcepath="fraction/Fraction.java"/>
+    </Class>
+    <Method classname="fraction.Fraction" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="fraction.Fraction" start="20" end="25" startBytecode="0" endBytecode="593" sourcefile="Fraction.java" sourcepath="fraction/Fraction.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="fraction.Fraction" start="23" end="23" startBytecode="25" endBytecode="25" sourcefile="Fraction.java" sourcepath="fraction/Fraction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="fraction.FractionType">
+      <SourceLine classname="fraction.FractionType" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Class>
+    <Method classname="fraction.FractionType" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="fraction.FractionType" start="17" end="21" startBytecode="0" endBytecode="86" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="fraction.FractionType" start="13" end="13" startBytecode="12" endBytecode="12" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="fraction.FractionType">
+      <SourceLine classname="fraction.FractionType" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Class>
+    <Method classname="fraction.FractionType" name="&lt;init&gt;" signature="(II)V" isStatic="false">
+      <SourceLine classname="fraction.FractionType" start="28" end="31" startBytecode="0" endBytecode="98" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="fraction.FractionType" start="13" end="13" startBytecode="12" endBytecode="12" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="fraction.FractionType">
+      <SourceLine classname="fraction.FractionType" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Class>
+    <Method classname="fraction.FractionType" name="&lt;init&gt;" signature="(Lfraction/FractionType;)V" isStatic="false">
+      <SourceLine classname="fraction.FractionType" start="36" end="40" startBytecode="0" endBytecode="102" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="fraction.FractionType" start="13" end="13" startBytecode="12" endBytecode="12" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_SELF_USE_OBJECT" priority="2" abbrev="Eq" category="CORRECTNESS" first="1">
+    <Class classname="fraction.FractionType">
+      <SourceLine classname="fraction.FractionType" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Class>
+    <Method classname="fraction.FractionType" name="equals" signature="(Lfraction/FractionType;)Z" isStatic="false">
+      <SourceLine classname="fraction.FractionType" start="53" end="58" startBytecode="0" endBytecode="106" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="2" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="fraction.FractionType">
+      <SourceLine classname="fraction.FractionType" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Class>
+    <Method classname="fraction.FractionType" name="equals" signature="(Lfraction/FractionType;)Z" isStatic="false">
+      <SourceLine classname="fraction.FractionType" start="53" end="58" startBytecode="0" endBytecode="106" sourcefile="FractionType.java" sourcepath="fraction/FractionType.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 11 Mar 2013 23:45:59 -0400" total_classes="1" referenced_classes="15" total_bugs="6" total_size="35" num_packages="1" vm_version="23.7-b01" cpu_seconds="0.89" clock_seconds="0.40" peak_mbytes="305.86" alloc_mbytes="455.12" gc_seconds="0.01" priority_2="2" priority_1="4">
+    <PackageStats package="fraction" total_bugs="6" total_types="2" total_size="35" priority_2="2" priority_1="4">
+      <ClassStats class="fraction.Fraction" sourceFile="Fraction.java" interface="false" size="35" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="93" invocations="358" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="10449" standardDeviationMircosecondsPerInvocation="652"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="41" invocations="2" avgMicrosecondsPerInvocation="20631" maxMicrosecondsPerInvocation="33196" standardDeviationMircosecondsPerInvocation="12565"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="25" invocations="359" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="158" standardDeviationMircosecondsPerInvocation="17"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="22" invocations="15" avgMicrosecondsPerInvocation="1487" maxMicrosecondsPerInvocation="6363" standardDeviationMircosecondsPerInvocation="1794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="21" invocations="11" avgMicrosecondsPerInvocation="1950" maxMicrosecondsPerInvocation="2246" standardDeviationMircosecondsPerInvocation="181"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="14" invocations="2" avgMicrosecondsPerInvocation="7307" maxMicrosecondsPerInvocation="14428" standardDeviationMircosecondsPerInvocation="7121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="12" invocations="67" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="3223" standardDeviationMircosecondsPerInvocation="398"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="11" invocations="2" avgMicrosecondsPerInvocation="5775" maxMicrosecondsPerInvocation="11385" standardDeviationMircosecondsPerInvocation="5610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="11" invocations="16" avgMicrosecondsPerInvocation="716" maxMicrosecondsPerInvocation="10707" standardDeviationMircosecondsPerInvocation="2579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="11" invocations="326" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="744" standardDeviationMircosecondsPerInvocation="60"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1365303777621" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1365303777622" release="" codeSize="112" numClasses="2"/>
+  </History>
+</BugCollection>

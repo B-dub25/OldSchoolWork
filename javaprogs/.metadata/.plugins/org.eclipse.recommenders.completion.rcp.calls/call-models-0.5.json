@@ -1,0 +1,87 @@
+{
+  "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9.x86_64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9.x86_64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/brian/javaprogs/hangman/src": {
+    "location": "/home/brian/javaprogs/hangman/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/hangman/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/tictactoe/src": {
+    "location": "/home/brian/javaprogs/tictactoe/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/tictactoe/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/labInherited/src": {
+    "location": "/home/brian/javaprogs/labInherited/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/labInherited/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/labAnimalArray/src": {
+    "location": "/home/brian/javaprogs/labAnimalArray/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/labAnimalArray/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/labfantasyfootball/src": {
+    "location": "/home/brian/javaprogs/labfantasyfootball/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/labfantasyfootball/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/inheritedLab/src": {
+    "location": "/home/brian/javaprogs/inheritedLab/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/inheritedLab/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/centimeters/src": {
+    "location": "/home/brian/javaprogs/centimeters/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/centimeters/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/execptionproject/src": {
+    "location": "/home/brian/javaprogs/execptionproject/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/execptionproject/src\u0027. Skipped."
+  },
+  "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.17.x86_64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.17.x86_64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/brian/javaprogs/newTictacToe/src": {
+    "location": "/home/brian/javaprogs/newTictacToe/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/newTictacToe/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/inheritedPerson/src": {
+    "location": "/home/brian/javaprogs/inheritedPerson/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/inheritedPerson/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/test/src": {
+    "location": "/home/brian/javaprogs/test/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/test/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/zoo/src": {
+    "location": "/home/brian/javaprogs/zoo/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/zoo/src\u0027. Skipped."
+  },
+  "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/brian/javaprogs/myzoo/src": {
+    "location": "/home/brian/javaprogs/myzoo/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/myzoo/src\u0027. Skipped."
+  },
+  "/home/brian/javaprogs/finalProject/src": {
+    "location": "/home/brian/javaprogs/finalProject/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaprogs/finalProject/src\u0027. Skipped."
+  }
+}

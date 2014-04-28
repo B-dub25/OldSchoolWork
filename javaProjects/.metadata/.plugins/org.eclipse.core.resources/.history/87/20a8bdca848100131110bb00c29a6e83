@@ -1,0 +1,42 @@
+import java.util.NoSuchElementException;
+
+
+public class Stack {
+	
+	private static final int MAX = 100;
+	private int[] stack;
+	private int stackPointer;
+	
+	public Stack() {
+		
+		stack = new int[MAX];
+		stackPointer = 0;
+	}
+	
+	public void push(int item) {
+		
+		stack[stackPointer++] = item; 
+	
+	}
+	
+	public int pop() {
+		
+		if(stackPointer == 0)
+			throw new NoSuchElementException();
+		
+		return stack[--stackPointer];
+		
+	}
+
+	public boolean isEmpty(){
+		return (stackPointer == 0);
+	}
+	
+	public boolean hasNext(){
+		return (stackPointer != 0);
+	}
+	
+	public int size() {
+		return stackPointer;
+	}
+}

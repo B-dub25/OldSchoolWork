@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Driver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Inventory[] mylist = new Inventory[15];
+		Scanner input = new Scanner(System.in);
+		for (Inventory comparable : mylist) {
+			System.out.println("Enter store Id and name ");
+		    String name = input.nextLine();
+		    int inventoryId = input.nextInt();
+			comparable.setInventoryId(inventoryId, name);	
+		}
+      Inventory.sort(mylist);
+	}
+}

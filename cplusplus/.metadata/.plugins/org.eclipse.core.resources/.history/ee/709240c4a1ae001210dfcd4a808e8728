@@ -1,0 +1,31 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Apr 25, 2013
+ *      Author: brian
+ *      Problem number 44
+ */
+#include "test.h"
+#include <fstream>
+#include  <vector>
+#include  <iterator>
+#include <algorithm>
+bool pali(vector<int>& t){
+
+	vector<int>::iterator start = t.begin();
+	vector<int>::iterator ending = t.end();
+	for(int i = 0 ; i < t.size()/2; i++){
+          if(*start != *ending)
+        	  return false;
+          else{
+        	  start++;
+        	  ending--;
+          }
+	return true ;
+
+}
+int main(int argc, char **argv) {
+
+}
+
+

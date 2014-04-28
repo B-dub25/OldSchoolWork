@@ -1,0 +1,16 @@
+package linker;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		LinkList<String> myLinkList = new LinkList<>();
+		myLinkList.push("b");
+		myLinkList.pushBack("a");
+		myLinkList.insert("d");
+		System.err.println(myLinkList);
+		myLinkList.sort();
+		System.err.println(myLinkList);
+
+	}
+
+}

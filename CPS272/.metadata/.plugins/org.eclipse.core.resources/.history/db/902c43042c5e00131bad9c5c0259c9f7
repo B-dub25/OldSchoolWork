@@ -1,0 +1,50 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Dec 5, 2013
+ *      Author: brundel
+ */
+
+#include <iostream>
+#include <set>
+
+using namespace std;
+
+
+template<typename T>
+class freq
+{
+public:
+
+	freq(T v, int cnt = 1) : value(v), count(cnt) {}
+    int increment() { return count++ ; }
+    T getValue() const { return value; }
+    int getCount() const { return count; }
+friend bool operator < ( const freq& a, const freq& b){
+	return a.value < b.value ;
+}
+friend bool operator <= ( const freq& a, const freq& b){
+	return a.value <= b.value ;
+}
+private:
+		T value;
+		int count;
+};
+
+int main(){
+
+	int arr[] = {6,3,3,9,4,9,6,9,3};
+	set<freq<int> > s;
+	int count = 0;
+	typename set<freq<int> >::iterator sIter;
+
+	for (int i = 0; i < 9; ++i) {
+		if((sIter = s.find(freq<int>(arr[i]))) == s.end())
+			s.insert(freq<int>(arr[i]));
+	}
+
+	for(sIter = s.begin(); sIter != s.end(); sIter++)
+		cout << (*sIter).getValue() << endl;
+
+}
+

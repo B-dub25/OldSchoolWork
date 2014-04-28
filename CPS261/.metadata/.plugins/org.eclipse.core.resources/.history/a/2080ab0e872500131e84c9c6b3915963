@@ -1,0 +1,113 @@
+package linker;
+
+import java.util.NoSuchElementException;
+
+public class LinkList<G extends Comparable<G>> {
+
+	private class Node<T> {
+
+		private Node<T> nextLink;
+		private T typeT;
+
+		private Node() {
+			nextLink = null;
+
+		}
+
+		private Node(T data, Node<T> link) {
+			typeT = data;
+			nextLink = link;
+		}
+	}
+
+	private Node<G> headNode;
+
+	/**
+	 * This class constructor has to be of type that implements
+	 * <code>Comparable</code> {@link LinkList}
+	 */
+	public LinkList() {
+
+		headNode = null;
+	}
+
+	/**
+	 * This method will place the new element to the front of the list
+	 * 
+	 * @param typeG
+	 *            The type to be placed in the list has to implement {@link <code> Comparable </code>}
+	 * 
+	 */
+	public void push(G typeG) {
+		headNode = new Node<G>(typeG, headNode);
+	}
+
+	/**
+	 * This method will take the element given and push it to the back of the
+	 * list
+	 * 
+	 * @param typeG
+	 *            The type to be place in the list
+	 */
+	public void pushBack(G typeG) {
+
+		if (headNode == null)
+			push(typeG);
+		else {
+			Node<G> current = headNode;
+			while (current.nextLink != null){
+				   current = current.nextLink;
+			System.err.println(current.typeT);
+			}
+
+			current.nextLink = new Node<G>(typeG, current);
+		}
+	}
+    /**
+     * This method will insert the given element into the correct 
+     * place . This is based on {@link <code>Comparable</code>} form.
+     * If the list is empty it will be placed into the first position 
+     * @param typeG The element to be placed into the list.
+     */
+	public void insert(G typeG) {
+
+		if (headNode.typeT.compareTo(typeG) > 0 || headNode == null)
+			push(typeG);
+		else {
+			Node<G> previous = headNode;
+			Node<G> current = headNode.nextLink;
+			while (current != null && (current.typeT.compareTo(typeG) < 0)) {
+                    previous = current;
+                    current = current.nextLink;
+			}
+			previous.nextLink = new Node<G>(typeG, current);
+		}
+	}
+	
+	public void sort() throws NoSuchElementException{
+	
+		if(headNode == null)
+			throw new NoSuchElementException(" Empty list ");
+		else{
+			Node<G> current = headNode;
+			LinkList<G> mylist = new LinkList<>();
+			
+			while(current != null){
+				mylist.insert(current.typeT);
+				current = current.nextLink;
+			}
+		headNode = null;
+		headNode = mylist.headNode;
+		}
+	}
+	
+	public String toString() {
+		String listString = "";
+		Node<G> current = headNode;
+		while(current != null){
+			 listString += String.valueOf(current.typeT) + "\n";
+			 current = current.nextLink;
+		}
+		return listString;
+	}
+}

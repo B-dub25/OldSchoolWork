@@ -1,0 +1,15 @@
+22:21:37 **** Incremental Build of configuration Debug for project MP7 ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: MP7
+Invoking: Cross G++ Linker
+g++  -o "MP7"  ./driver.o   
+Finished building target: MP7
+ 
+
+22:21:37 Build Finished (took 209ms)
+

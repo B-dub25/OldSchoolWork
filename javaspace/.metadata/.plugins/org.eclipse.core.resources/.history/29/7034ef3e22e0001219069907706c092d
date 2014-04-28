@@ -1,0 +1,17 @@
+
+public class Driver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Integer[] myarrayIntegers = new Integer[]{10,2,30,1,8,5,15};
+		Inventory.sort(myarrayIntegers);
+		for (Integer integer : myarrayIntegers) {
+			System.out.println(myarrayIntegers);
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+13:52:39 **** Incremental Build of configuration Debug for project midterm ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int re(int)’:
+../main.cpp:136:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../main.cpp
+ 
+Building target: midterm
+Invoking: Cross G++ Linker
+g++  -o "midterm"  ./main.o   
+Finished building target: midterm
+ 
+
+13:52:39 Build Finished (took 471ms)
+

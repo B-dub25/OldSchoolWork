@@ -1,0 +1,22 @@
+{
+  "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/brian/javaspace/calculater/src": {
+    "location": "/home/brian/javaspace/calculater/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaspace/calculater/src\u0027. Skipped."
+  },
+  "/home/brian/javaspace/bank/src": {
+    "location": "/home/brian/javaspace/bank/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaspace/bank/src\u0027. Skipped."
+  },
+  "/home/brian/javaspace/inventoty/src": {
+    "location": "/home/brian/javaspace/inventoty/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/javaspace/inventoty/src\u0027. Skipped."
+  }
+}

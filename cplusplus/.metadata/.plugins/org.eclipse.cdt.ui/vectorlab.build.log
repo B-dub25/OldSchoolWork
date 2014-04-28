@@ -1,0 +1,7 @@
+18:59:56 **** Clean-only build of configuration Debug for project vectorlab ****
+make clean 
+rm -rf  ./driver.o  ./driver.d  vectorlab
+ 
+
+18:59:56 Build Finished (took 59ms)
+

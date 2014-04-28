@@ -1,0 +1,10 @@
+Ted 10
+Alice 20
+Bob 50
+Ted 23
+Joan 60
+Alice 20
+Bob 30
+Alice 70
+Ted 80
+Joan 50

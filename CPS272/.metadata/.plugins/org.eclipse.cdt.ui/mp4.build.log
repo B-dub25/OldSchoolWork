@@ -1,0 +1,19 @@
+09:35:35 **** Incremental Build of configuration Debug for project mp4 ****
+make all 
+Building file: ../mp4.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mp4.d" -MT"mp4.d" -o "mp4.o" "../mp4.cpp"
+../mp4.cpp: In function ‘bool balanced(const string&)’:
+../mp4.cpp:30:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(flag && position < pattern.length()){
+                                          ^
+Finished building: ../mp4.cpp
+ 
+Building target: mp4
+Invoking: Cross G++ Linker
+g++  -o "mp4"  ./mp4.o   
+Finished building target: mp4
+ 
+
+09:35:35 Build Finished (took 407ms)
+

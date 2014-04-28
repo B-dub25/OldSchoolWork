@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type variable &apos;T&apos; of &apos;mylist.List.Iterator&apos; to &apos;G&apos;&#x0A;- Original project: &apos;mylist&apos;&#x0A;- Original element: &apos;T&apos;&#x0A;- Renamed element: &apos;G&apos;&#x0A;- Update references to refactored element" description="Rename type variable &apos;T&apos;" id="org.eclipse.jdt.ui.rename.type.parameter" input="/src&lt;mylist{List.java[List[Iterator" name="G" parameter="T" references="true" stamp="1379814489635" version="1.0"/>
+</session>

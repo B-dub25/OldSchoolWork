@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 resources to &apos;mp4&apos;" description="Move 1 resources to &apos;mp4&apos;" destination="/mp4" element1="/MP4/voting.txt" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1361918132002" updateReferences="true"/>
+</session>

@@ -1,0 +1,154 @@
+
+
+public class DataStructure implements MaxItems{
+   
+	private DataStructureRecord[] records;
+	private SortedArray<String>  studentIds;
+	private SortedArray<String>  firstNames;
+	private SortedArray<String>  lastNames;
+	private int indexPointer;
+	private Stack<Integer> emptyPositions;
+	
+	
+	public DataStructure() {
+		
+		records = new DataStructureRecord[MAX];
+		for(int i = 0; i < MAX; ++i)
+			 records[i] = new DataStructureRecord();
+		studentIds = new SortedArray<String>();
+		firstNames = new SortedArray<String>();
+		lastNames = new SortedArray<String>();
+		emptyPositions = new Stack<>();
+	}
+	
+	public void insert(String fName, String lName, String id){
+		
+		if(studentIds.find(id) < 0){
+			studentIds.insert(id, indexPointer);
+			firstNames.insert(fName, indexPointer);
+			lastNames.insert(lName, indexPointer);
+			records[indexPointer].insert(fName, lName, id);
+			indexPointer++;
+		}
+		else if(!emptyPositions.isEmpty()){
+                int position = emptyPositions.pop();
+                records[position].insert(fName, lName, id);
+                studentIds.update(position,id);
+                firstNames.update(position, fName);
+                lastNames.update(position, lName);
+		}
+	}
+	
+	public void findIt(String id) {
+		
+		int position = studentIds.find(id);
+		if(position >= 0)
+			System.out.println(records[position]);
+		else
+			System.err.println("Student id " + id + " not found " );
+	}
+	
+	public boolean search(String id){
+		
+		int position = studentIds.find(id);
+		
+	 return (position >= 0 && !emptyPositions.search(position));
+	}
+	
+	public boolean deleteIt(String id){
+		
+		int position = studentIds.find(id);
+		
+		if(position >= 0)
+			emptyPositions.push(studentIds.getIndex(position));
+	
+	return ( position >= 0 );
+	}
+	
+	public void listIt(int field, int option){
+		
+		if(field == 3)
+			printId(option);
+		else
+			printName(option);
+			
+	}
+	public void printRecord(String id) {
+		
+		int position = studentIds.find(id);
+		System.out.println(records[studentIds.getIndex(position)]);
+		
+	}
+	private void printName(int option){
+		int position = 0;
+		if(option == 2)
+			for(int i = indexPointer-1; i >= 0; --i){
+				position = firstNames.getIndex(i);
+				if(!emptyPositions.search(position))  
+					System.out.println( records[position]);
+			}
+		else {
+			for(int i = 0; i < indexPointer; ++i){
+				position = firstNames.getIndex(i);
+				if(!emptyPositions.search(position))  
+					System.out.println(records[position]);
+			}
+		}
+		
+	}
+	
+	private void printId(int option){
+	    
+		int position = 0; 
+		if(option == 1){
+			for(int i = 0; i < indexPointer; ++i){
+				position = studentIds.getIndex(i);
+				if(!emptyPositions.search(position))  
+					System.out.println( records[position]);
+			}
+		}else
+			for(int i = indexPointer-1; i >=0 ; --i){
+				position = studentIds.getIndex(i);
+				if(!emptyPositions.search(position)){
+				   System.out.println( records[position]);
+				
+				}
+				}
+	    }
+	
+	private class DataStructureRecord{
+		
+		private String studentId;
+		private String firstName;
+		private String lastName;
+	
+		
+		private DataStructureRecord() {
+
+			studentId = "";
+			firstName = "";
+			lastName  = "";
+		}
+		
+		private void insert(String fName, String lName, String id){
+			
+			firstName = fName;
+			lastName  = lName;
+			studentId = id;
+			
+		}
+		
+		public String toString() {
+			return (studentId + "\t" + firstName + "\t" + lastName);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+	}
+}

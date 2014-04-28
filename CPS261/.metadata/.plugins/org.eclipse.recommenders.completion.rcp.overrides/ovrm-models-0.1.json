@@ -1,0 +1,27 @@
+{
+  "/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:ovrm:1.0.0",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/brian/Programming/CPS261/drawing/src": {
+    "location": "/home/brian/Programming/CPS261/drawing/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/drawing/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/fileio2/src": {
+    "location": "/home/brian/Programming/CPS261/fileio2/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/fileio2/src\u0027. Skipped."
+  },
+  "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.3.0.fc19.x86_64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:ovrm:1.0.0",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.3.0.fc19.x86_64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/brundel/Programming/CPS261/NetworkedPrograms/src": {
+    "location": "/home/brundel/Programming/CPS261/NetworkedPrograms/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brundel/Programming/CPS261/NetworkedPrograms/src\u0027. Skipped."
+  }
+}

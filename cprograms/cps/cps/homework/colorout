@@ -1,0 +1,55 @@
+      1st COLOR      2nd COLOR    TINT         RESULT 
+
+1ST   ILLEGAL        ILLEGAL      ILLEGAL      INVALID
+rrk   RED            RED          BLACK        DARK RED
+orw   ORANGE         RED          WHITE        LIGHT RED ORANGE
+VGN   VIOLET         GREEN        NEUTRAL      ILLEGAL COMBINATIONS
+ngb   ILLEGAL        GREEN        ILLEGAL      INVALID
+yyw   YELLOW         YELLOW       WHITE        LIGHT YELLOW
+bBn   BLUE           BLUE         NEUTRAL      BLUE
+ggw   GREEN          GREEN        WHITE        LIGHT GREEN
+oOk   ORANGE         ORANGE       BLACK        DARK ORANGE
+Vvw   VIOLET         VIOLET       WHITE        LIGHT VIOLET
+yok   YELLOW         ORANGE       BLACK        DARK YELLOW ORANGE
+oyb   ORANGE         YELLOW       ILLEGAL      INVALID
+Bgn   BLUE           GREEN        NEUTRAL      BLUE GREEN
+gBk   GREEN          BLUE         BLACK        DARK BLUE GREEN
+rvW   RED            VIOLET       WHITE        LIGHT RED VIOLET
+vrK   VIOLET         RED          BLACK        DARK RED VIOLET
+gyn   GREEN          YELLOW       NEUTRAL      YELLOW GREEN
+ygw   YELLOW         GREEN        WHITE        LIGHT YELLOW GREEN
+rbk   RED            BLUE         BLACK        DARK VIOLET
+brn   BLUE           RED          NEUTRAL      VIOLET
+bVn   BLUE           VIOLET       NEUTRAL      BLUE VIOLET
+vbk   VIOLET         BLUE         BLACK        DARK BLUE VIOLET
+roW   RED            ORANGE       WHITE        LIGHT RED ORANGE
+Orn   ORANGE         RED          NEUTRAL      RED ORANGE
+rgk   RED            GREEN        BLACK        DARK BROWN
+Grw   GREEN          RED          WHITE        LIGHT BROWN
+byw   BLUE           YELLOW       WHITE        LIGHT GREEN
+ybk   YELLOW         BLUE         BLACK        DARK GREEN
+abc   ILLEGAL        BLUE         ILLEGAL      INVALID
+XYZ   ILLEGAL        YELLOW       ILLEGAL      INVALID
+123   ILLEGAL        ILLEGAL      ILLEGAL      INVALID
+rrr   RED            RED          ILLEGAL      INVALID
+ooo   ORANGE         ORANGE       ILLEGAL      INVALID
+byn   BLUE           YELLOW       NEUTRAL      GREEN
+rgn   RED            GREEN        NEUTRAL      BROWN
+grw   GREEN          RED          WHITE        LIGHT BROWN
+vyn   VIOLET         YELLOW       NEUTRAL      ILLEGAL COMBINATIONS
+yvw   YELLOW         VIOLET       WHITE        ILLEGAL COMBINATIONS
+bok   BLUE           ORANGE       BLACK        ILLEGAL COMBINATIONS
+obw   ORANGE         BLUE         WHITE        ILLEGAL COMBINATIONS
+gvw   GREEN          VIOLET       WHITE        ILLEGAL COMBINATIONS
+gon   GREEN          ORANGE       NEUTRAL      ILLEGAL COMBINATIONS
+von   VIOLET         ORANGE       NEUTRAL      ILLEGAL COMBINATIONS
+ovw   ORANGE         VIOLET       WHITE        ILLEGAL COMBINATIONS
+rGg   RED            GREEN        ILLEGAL      INVALID
+nrg   ILLEGAL        RED          ILLEGAL      INVALID
+bvx   BLUE           VIOLET       ILLEGAL      INVALID
+bnn   BLUE           ILLEGAL      NEUTRAL      INVALID
+wbb   ILLEGAL        BLUE         ILLEGAL      INVALID
+wbw   ILLEGAL        BLUE         WHITE        INVALID
+oww   ORANGE         ILLEGAL      WHITE        INVALID
+END   ILLEGAL        ILLEGAL      ILLEGAL      INVALID
+Total Dark:9         Total Light: 10  

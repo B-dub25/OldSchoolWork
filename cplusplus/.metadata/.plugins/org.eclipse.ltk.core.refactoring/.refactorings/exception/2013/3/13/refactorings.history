@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;exception/Date.h&apos; to &apos;DateForm.h&apos;" description="Rename resource &apos;Date.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Date.h" name="DateForm.h" stamp="1364091473653" updateReferences="true"/>
+</session>

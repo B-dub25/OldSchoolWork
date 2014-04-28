@@ -1,0 +1,15 @@
+23:30:31 **** Incremental Build of configuration Debug for project mapsNov13 ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: mapsNov13
+Invoking: Cross G++ Linker
+g++  -o "mapsNov13"  ./driver.o   
+Finished building target: mapsNov13
+ 
+
+23:30:31 Build Finished (took 607ms)
+

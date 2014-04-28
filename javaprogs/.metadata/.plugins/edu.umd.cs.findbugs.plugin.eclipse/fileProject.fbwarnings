@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1365455591704" analysisTimestamp="1365455588725" release="">
+  <Project projectName="fileProject">
+    <Jar>/home/brian/javaprogs/fileProject/bin</Jar>
+    <AuxClasspathEntry>/home/brian/javaprogs/fileProject/bin</AuxClasspathEntry>
+    <SrcDir>/home/brian/javaprogs/fileProject/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="fileProject.FileHander">
+      <SourceLine classname="fileProject.FileHander" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Class>
+    <Method classname="fileProject.FileHander" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="fileProject.FileHander" start="16" end="49" startBytecode="0" endBytecode="499" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="fileProject.FileHander" start="39" end="39" startBytecode="149" endBytecode="149" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="fileProject.FileHander">
+      <SourceLine classname="fileProject.FileHander" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Class>
+    <Method classname="fileProject.FileHander" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="fileProject.FileHander" start="16" end="49" startBytecode="0" endBytecode="499" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="131" end="132" startBytecode="0" endBytecode="62" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="fileProject.FileHander" start="27" end="27" startBytecode="78" endBytecode="78" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="fileProject.FileHander">
+      <SourceLine classname="fileProject.FileHander" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Class>
+    <Method classname="fileProject.FileHander" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="fileProject.FileHander" start="16" end="49" startBytecode="0" endBytecode="499" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="131" end="132" startBytecode="0" endBytecode="62" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="fileProject.FileHander" start="29" end="29" startBytecode="99" endBytecode="99" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="fileProject.FileHander">
+      <SourceLine classname="fileProject.FileHander" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Class>
+    <Method classname="fileProject.FileHander" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="fileProject.FileHander" start="16" end="49" startBytecode="0" endBytecode="499" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="fileProject.FileHander" start="18" end="18" startBytecode="11" endBytecode="11" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="fileProject.FileHander">
+      <SourceLine classname="fileProject.FileHander" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Class>
+    <Method classname="fileProject.FileHander" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="fileProject.FileHander" start="16" end="49" startBytecode="0" endBytecode="499" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Method>
+    <LocalVariable name="yString" register="2" pc="28" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="fileProject.FileHander" start="26" end="26" startBytecode="57" endBytecode="57" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="fileProject.FileHander" start="17" end="17" startBytecode="2" endBytecode="2" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="fileProject.FileHander" start="21" end="21" startBytecode="31" endBytecode="31" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="fileProject.FileHander">
+      <SourceLine classname="fileProject.FileHander" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Class>
+    <Method classname="fileProject.FileHander" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="fileProject.FileHander" start="16" end="49" startBytecode="0" endBytecode="499" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java"/>
+    </Method>
+    <LocalVariable name="myfilWriter" register="1" pc="103" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="fileProject.FileHander" start="34" end="34" startBytecode="119" endBytecode="119" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="fileProject.FileHander" start="16" end="16" startBytecode="0" endBytecode="0" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="fileProject.FileHander" start="31" end="31" startBytecode="106" endBytecode="106" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <SourceLine classname="fileProject.FileHander" start="32" end="32" startBytecode="113" endBytecode="113" sourcefile="FileHander.java" sourcepath="fileProject/FileHander.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 8 Apr 2013 17:12:43 -0400" total_classes="1" referenced_classes="22" total_bugs="6" total_size="30" num_packages="1" vm_version="23.7-b01" cpu_seconds="6.73" clock_seconds="2.99" peak_mbytes="323.08" alloc_mbytes="455.12" gc_seconds="0.01" priority_2="2" priority_1="4">
+    <PackageStats package="fileProject" total_bugs="6" total_types="1" total_size="30" priority_2="2" priority_1="4">
+      <ClassStats class="fileProject.FileHander" sourceFile="FileHander.java" interface="false" size="30" bugs="6" priority_2="2" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="480" invocations="2" avgMicrosecondsPerInvocation="240182" maxMicrosecondsPerInvocation="347377" standardDeviationMircosecondsPerInvocation="107195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="395" invocations="384" avgMicrosecondsPerInvocation="1031" maxMicrosecondsPerInvocation="14691" standardDeviationMircosecondsPerInvocation="1930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="197" invocations="22" avgMicrosecondsPerInvocation="8986" maxMicrosecondsPerInvocation="43227" standardDeviationMircosecondsPerInvocation="11641"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="116" invocations="22" avgMicrosecondsPerInvocation="5293" maxMicrosecondsPerInvocation="21530" standardDeviationMircosecondsPerInvocation="6236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="55" invocations="71" avgMicrosecondsPerInvocation="783" maxMicrosecondsPerInvocation="3110" standardDeviationMircosecondsPerInvocation="635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="52" invocations="22" avgMicrosecondsPerInvocation="2401" maxMicrosecondsPerInvocation="11529" standardDeviationMircosecondsPerInvocation="3139"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="51" invocations="12" avgMicrosecondsPerInvocation="4258" maxMicrosecondsPerInvocation="4992" standardDeviationMircosecondsPerInvocation="319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="46" invocations="352" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="1656" standardDeviationMircosecondsPerInvocation="241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="45" invocations="3" avgMicrosecondsPerInvocation="15254" maxMicrosecondsPerInvocation="17668" standardDeviationMircosecondsPerInvocation="2520"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="44" invocations="22" avgMicrosecondsPerInvocation="2003" maxMicrosecondsPerInvocation="6458" standardDeviationMircosecondsPerInvocation="2247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="37" invocations="22" avgMicrosecondsPerInvocation="1718" maxMicrosecondsPerInvocation="5826" standardDeviationMircosecondsPerInvocation="1856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="37" invocations="22" avgMicrosecondsPerInvocation="1701" maxMicrosecondsPerInvocation="10802" standardDeviationMircosecondsPerInvocation="2458"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="36" invocations="385" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="419" standardDeviationMircosecondsPerInvocation="38"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1365455591701" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

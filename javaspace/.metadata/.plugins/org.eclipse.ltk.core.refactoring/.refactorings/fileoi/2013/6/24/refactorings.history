@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;myint&apos; in &apos;FilesTest.main(...)&apos; to &apos;max&apos;&#x0A;- Original project: &apos;fileoi&apos;&#x0A;- Original element: &apos;FilesTest.main(String[]).myint&apos;&#x0A;- Renamed element: &apos;myint&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;myint&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{FilesTest.java[FilesTest~main~\[QString;@myint!208!217!212!216!I!0!false" name="max" references="true" stamp="1371005436657" version="1.0"/>
+</session>

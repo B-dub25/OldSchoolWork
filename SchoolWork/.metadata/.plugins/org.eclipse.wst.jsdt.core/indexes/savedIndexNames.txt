@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/home/brundel/Programming/SchoolWork/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2816474265.index
+849688104.index
+1551076368.index
+3509832019.index
+3703194086.index
+3525344654.index

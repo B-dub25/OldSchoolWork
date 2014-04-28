@@ -1,0 +1,184 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "88073eb5e976d2d475561b3291cc0279ad616e11",
+    "jarFileModificationDate": "2013-04-19T16:22:09-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7b858f00c4a7bdd3508de4d0dcbf08f09cf56cc0",
+    "jarFileModificationDate": "2013-04-19T16:25:54-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b5fccd3f194bf592ce761aebe964c357c57751ce",
+    "jarFileModificationDate": "2013-04-19T16:26:37-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/ext/pulse-java.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9b76cacf909bb361d18f5b2135cf9351bbb75da0",
+    "jarFileModificationDate": "2013-04-19T16:18:15-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e7fa08e9182a52d21a48f3681234e3d5c05c482e",
+    "jarFileModificationDate": "2013-04-19T16:25:54-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "07a594fbf747bf53950c409ece257e3c5b67c99a",
+    "jarFileModificationDate": "2013-04-19T16:28:43-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/ext/gnome-java-bridge.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f605e97d686939f9a5b4170340f86d0f2dad0185",
+    "jarFileModificationDate": "2013-04-19T16:25:54-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d1f042cb7926107f830535f9ee59c9a6ec0b94e7",
+    "jarFileModificationDate": "2013-04-19T16:19:02-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "06a3441a04033929ee9d3135b922b67adce08a4e",
+    "jarFileModificationDate": "2013-04-19T16:21:16-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2a81a136e5b4361575e5afabab7067c59b6a4207",
+    "jarFileModificationDate": "2013-04-19T16:19:06-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cec366bcc884aa897d416d4a844602b8c9ee2d67",
+    "jarFileModificationDate": "2013-04-19T16:18:50-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "03bc35e9bf2e95e82d43c044652248b5b6b5e727",
+    "jarFileModificationDate": "2013-04-19T16:18:38-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2d126816d424701e021a02736c50242704429eb7",
+    "jarFileModificationDate": "2013-04-19T16:25:54-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/rhino.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "448d7fd88f28f1f90efe48a3377036a793d8f4ea",
+    "jarFileModificationDate": "2013-04-19T16:18:24-04:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64/jre/lib/ext/sunec.jar",
+    "javaRuntime": true
+  }
+]

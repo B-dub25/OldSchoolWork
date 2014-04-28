@@ -1,0 +1,17 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Dec 7, 2013
+ *      Author: brundel
+ */
+#include "miniList.h"
+
+
+int main(){
+
+	miniList<string> list;
+    list.insert("HI");
+    list.insert("Bye");
+	list.print();
+    return 0;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;hash/hashTable.h&apos; to &apos;hashMap.h&apos;" description="Rename resource &apos;hashTable.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="hashTable.h" name="hashMap.h" stamp="1386479835303" updateReferences="true"/>
+</session>

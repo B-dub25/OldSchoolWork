@@ -1,0 +1,52 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Oct 1, 2013
+ *      Author: brian
+ */
+
+#include "intEntery.h"
+#include <list>
+#include <cmath>
+void loadPrimes(list<intEntery>& primes, int n) {
+
+	int sum = 1;
+	list<intEntery>::iterator it;
+
+	while (sum < n) {
+		for (int i = 2; i < n; ++i) {
+			if (n % i == 0) {
+				intEntery primeFactor(i);
+				primes.push_back(primeFactor);
+				n = n / 2;
+				sum *= i;
+			}
+		}
+	}
+
+
+}
+int gcd(int n, int m){
+
+	int greatestCommon = 0;
+	int x = 1;
+	while(n % x == 0 && m % x == 0)
+		x++
+	return x;
+
+}
+int main(int argc, char **argv) {
+
+	list<intEntery> mylist;
+	list<intEntery> otherList;
+	list<intEntery>::iterator it;
+	loadPrimes(mylist, 60);
+	for(it = mylist.begin(); it != mylist.end(); ++it)
+		cout << *it;
+	cout << endl;
+	loadPrimes(otherList, 18);
+	for(it = otherList.begin(); it != otherList.end(); ++it)
+			cout << *it;
+    cout << gcd(60,18);
+}
+

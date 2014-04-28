@@ -1,0 +1,16 @@
+package doublyLink;
+
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		DoublyLinkedList list = new DoublyLinkedList();
+		
+		list.push("brian");
+		list.push("rian");
+		list.insert("m");
+		list.print();
+	}
+
+}

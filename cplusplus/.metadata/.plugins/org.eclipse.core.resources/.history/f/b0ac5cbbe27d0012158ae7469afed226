@@ -1,0 +1,105 @@
+/*
+ * election.h
+ *
+ *  Created on: Feb 22, 2013
+ *      Author: Brian Rundel
+ */
+
+#ifndef ELECTION_H_
+#define ELECTION_H_
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+template <class T, class T2>
+class election {
+
+	friend ostream& operator<<(ostream&, const election &) const;
+	friend istream& operator>>(istream&, election&);
+	friend ifstream& operator>>(ifstream&, election&);
+	friend ofstream& operator <<(ofstream&, T&);
+	friend ofstream& operator <<(ofstream&, const T&, const T2&) const;
+
+public:
+	static const int MAX = 10;
+	void sort();
+	election();
+	virtual string what() { return "Wrong input clearing";}
+	virtual ~election() {delete [] array; delete [] array2;}
+	bool operator ==(const election&) const;
+	bool operator>=(const T&) const;
+	bool operator!=(const T&) const;
+	const T operator+(const T&) const;
+protected:
+	T* array[];
+	T2** array2[][];
+};
+
+election<string,int>::election(){
+	T* array<string> = new string[10];
+	T2** array2<int>   = new int*[7];
+	for(int i = 0; i < 7; i++)
+	array2[i] = new int[3];
+}
+ifstream& operator>>(ifstream& in, election<string, int> & obj){
+	int x = 0;
+	while(in){
+	 try {
+		in >> obj.array[x];
+		for (int i = 0; i < 3; i++){
+			in >> obj.array2[x][i];
+		}
+		x++;
+	 }catch (in){
+		in.clear();
+	    cout << obj.what();
+	    return -1;
+	  }
+	}
+	return in;
+}
+ostream& operator<<(ostream& os, const election<string, int>& obj) const{
+
+	for(int i = 0 ; i < 3; i++){
+			os << obj.array[i];
+		 for(int j = 0; j < 3; j++){
+			 os << obj.array2[i][j];
+		 }
+		}
+	return os;
+}
+
+istream& operator>>(istream& is, election<string,int>& obj ){
+
+	for(int i = 0 ; i < 10; i++){
+		is >> obj.array[i];
+	 for(int j = 0; j < 10; j++){
+		 is >> obj.array2[i][j];
+	 }
+	}
+	return is;
+}
+
+template<class T, class T2>
+void election<T,T2>::sort(){
+    T temp;
+    T2 temp2;
+    int largest = 0; int row = 0;
+    for(int i = 0; i < 7; ++i)
+    {
+    	for(int x = 0; x < 3; x++){
+    	for(int j = 1+x; j < 3; ++j) {
+			if(array2[i][x] < array2[i][j])
+				{largest = j; row = x;}
+		}
+
+    temp = array[i];
+    temp2 = array2[i][x];
+    array[i] = array[largest];
+    array[i][i] = array2[i][largest];
+    array[largest] = temp;
+    array2[largest][i] = temp2;
+       }
+    }
+}
+#endif /* ELECTION_H_ */

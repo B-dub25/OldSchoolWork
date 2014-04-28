@@ -1,0 +1,36 @@
+/*
+ * Node.h
+ *
+ *  Created on: Sep 25, 2013
+ *      Author: brian
+ */
+
+#ifndef NODE_H_
+#define NODE_H_
+
+#include <iostream>
+#include <string>
+#include <exception>
+using namespace std;
+template<typename T>
+class node {
+
+	friendostream& operator<<(ostream& os, const node<T>& obj) {
+
+		return os << obj.data;
+	}
+	friend class miniList;
+
+public:
+	node(T info = 0, node* link = NULL) :
+			data(info), nextLink(link) {
+	}
+	;
+private:
+	T data;
+	node<T>* nextLink;
+};
+
+
+
+#endif /* NODE_H_ */

@@ -1,0 +1,15 @@
+12:35:28 **** Incremental Build of configuration Debug for project MP5 ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: MP5
+Invoking: Cross G++ Linker
+g++  -o "MP5"  ./driver.o   
+Finished building target: MP5
+ 
+
+12:35:28 Build Finished (took 308ms)
+

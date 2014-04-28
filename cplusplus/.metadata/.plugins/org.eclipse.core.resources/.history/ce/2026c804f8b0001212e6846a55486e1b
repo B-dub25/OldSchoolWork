@@ -1,0 +1,35 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: brian
+ */
+#include "phoneNumber.h"
+
+
+
+int main(int argc, char **argv) {
+
+	phoneNumber myNumber;
+    char a[2] = {'1','2'};
+    int t = a[1] - '0';
+    cout << t;
+    if(t == 2)
+    	cout << "KOAY";
+	do {
+	   try{
+		cout << "Enter your phone number ";
+		   cin >> myNumber;
+		cout << myNumber;
+		break;
+	   }catch (invalidFormat& e) {
+		  cout << e.what() << endl;;
+
+	}
+
+	} while (true);
+}
+
+
+
+

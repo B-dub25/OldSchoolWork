@@ -1,0 +1,25 @@
+22:33:16 **** Incremental Build of configuration Debug for project hashCode ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:9:0:
+../node.h: In constructor ‘hash<K, T>::hash(K, T)’:
+../node.h:46:10: error: expected primary-expression before ‘>’ token
+    list<T>[sz];
+          ^
+../node.h: In lambda function:
+../node.h:46:15: error: expected ‘{’ before ‘;’ token
+    list<T>[sz];
+               ^
+../node.h: In constructor ‘hash<K, T>::hash(K, T)’:
+../node.h:46:15: warning: lambda expressions only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../node.h: In instantiation of ‘class node<int>’:
+../driver.cpp:14:13:   required from here
+../node.h:16:11: error: template argument required for ‘class hash’
+ class node{
+           ^
+make: *** [driver.o] Error 1
+
+22:33:16 Build Finished (took 157ms)
+

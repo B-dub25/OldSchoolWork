@@ -1,0 +1,27 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Feb 26, 2013
+ *      Author: brian
+ */
+#include "votes.h"
+#include "disitance.h"
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main(int argc, char **argv) {
+	votes mybase;
+	Distance *d = new Distance(12,9);
+	d->getFeet();
+
+//	ifstream infile;
+//	infile.open("voting.txt");
+//
+//	infile >> mybase;
+//	cout << mybase;
+}
+
+
+
+

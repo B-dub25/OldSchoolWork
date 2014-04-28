@@ -1,0 +1,51 @@
+
+public class DataStructure implements Maxium{
+
+   private DataStructureRecord[] records;
+   private SortedArray<String>   studentId;
+   private SortedArray<String>   studentFName;
+   private SortedArray<String>   studentLName;
+   private int indexPointer;
+   
+   public DataStructure() {
+
+	records = new DataStructureRecord[MAX];
+	studentId = new SortedArray<>();
+	studentFName = new SortedArray<>();
+	studentLName = new SortedArray<>();
+	indexPointer = 0;
+	   
+   }
+
+
+	
+	
+	
+private class DataStructureRecord{
+		
+	private	String id;
+	private	String lastName;
+	private	String firstName;
+	
+	private DataStructureRecord(){
+		
+		id = "";
+		lastName = "";
+		firstName = "";
+	}
+		
+    private void insert(String fName, String lName, String studentID){
+    	
+    	firstName = fName;
+    	lastName  = lName;
+    	id        = studentID;	
+    }
+    
+    @Override
+    public String toString(){
+	   return (id + "\t" + firstName + "\t" + lastName + "\t");
+	}
+}
+
+
+}

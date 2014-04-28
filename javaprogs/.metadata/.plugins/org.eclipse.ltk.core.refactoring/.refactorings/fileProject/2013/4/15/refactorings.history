@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;my&apos; in &apos;fileProject.FileHander.main(...)&apos; to &apos;myfilWriter&apos;&#x0A;- Original project: &apos;fileProject&apos;&#x0A;- Original element: &apos;fileProject.FileHander.main(String[]).my&apos;&#x0A;- Renamed element: &apos;my&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;my&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;fileProject{FileHander.java[FileHander~main~\[QString;@my!193!207!205!206!QPrintWriter;!0!false" name="myfilWriter" references="true" stamp="1365372510597" version="1.0"/>
+</session>

@@ -1,0 +1,77 @@
+import java.util.Arrays;
+
+
+public class DataStructorRecord {
+
+	private Stack emptySpots;
+	private int dataBasePointer;
+	private SortedArray<String>  identification;
+	private SortedArray<String>  firstName;
+	private SortedArray<String>  lastName;
+	private DataBaseRecord[]     records;
+	private static final int     MAX = 100;
+	
+	   
+	public DataStructorRecord() {
+
+		dataBasePointer = 0;
+		identification  = new SortedArray<>();
+		firstName       = new SortedArray<>();
+		lastName	    = new SortedArray<>();
+		records         = new DataBaseRecord[MAX];
+		records         = Arrays.copyOf(records, MAX, DataBaseRecord[].class);
+		
+	}
+	
+	public void insert(String id, String fName, String lName) {
+		
+		if(identification.findID(id) < 0)
+			return; // already in the list
+		else if(emptySpots.isEmpty()){	
+		identification.setDataType(id, dataBasePointer);
+		firstName.setDataType(fName, dataBasePointer);
+		lastName.setDataType(lName, dataBasePointer);
+		records[dataBasePointer].setData(id, fName, lName);
+		++dataBasePointer;
+		}
+		else{
+			int position = emptySpots.pop();	
+			identification.update(records[position].getId(), id);
+			firstName.update(records[position].getFirstName(), fName);
+			lastName.update(records[position].getLastName(), lName);
+			records[position].setData(id, fName, lName);
+		}
+	}
+	
+	public int findIt(String id) {
+		
+		return identification.findID(id);
+	
+	}
+    
+	/**
+     * 
+     * @param index
+     * @return
+     */
+
+	public String getRecord(int  index) {
+		
+		if(index < 0)
+			throw new IndexOutOfBoundsException("Index : " + index);
+		
+		return (index >= 0) ? records[index].toString() : null;
+	}
+	
+	public boolean deleteRecord(String id){
+		
+		int position = identification.findID(id);
+		boolean found = false;
+		if(position >= 0 ){
+			found = true;
+			emptySpots.push(position);
+		}
+		
+        return found;
+	}
+}

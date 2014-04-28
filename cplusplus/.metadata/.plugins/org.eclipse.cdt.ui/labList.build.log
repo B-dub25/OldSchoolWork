@@ -1,0 +1,15 @@
+22:49:57 **** Incremental Build of configuration Debug for project labList ****
+make all 
+Building file: ../listDriver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"listDriver.d" -MT"listDriver.d" -o "listDriver.o" "../listDriver.cpp"
+Finished building: ../listDriver.cpp
+ 
+Building target: labList
+Invoking: Cross G++ Linker
+g++  -o "labList"  ./listDriver.o   
+Finished building target: labList
+ 
+
+22:49:58 Build Finished (took 612ms)
+

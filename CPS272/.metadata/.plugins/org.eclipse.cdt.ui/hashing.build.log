@@ -1,0 +1,15 @@
+16:21:42 **** Incremental Build of configuration Debug for project hashing ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hashing
+Invoking: Cross G++ Linker
+g++  -o "hashing"  ./driver.o   
+Finished building target: hashing
+ 
+
+16:21:42 Build Finished (took 209ms)
+

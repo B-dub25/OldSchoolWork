@@ -1,0 +1,57 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Apr 25, 2013
+ *      Author: brian
+ *      Problem number 44
+ */
+#include "test.h"
+#include <fstream>
+#include  <vector>
+#include  <iterator>
+#include <algorithm>
+void print_row(unsigned int cnt)
+{
+     while(cnt-- > 0)
+    	 cout << "* ";
+     cout << '\n';
+}
+void print(int num)
+{
+    if (num > 0)
+    {
+        cout << num << " ";
+        print(num - 1);
+    }
+}
+void triangle(int maxrow, int row = 0)
+{
+     if (row >= maxrow)
+     {
+         print_row(row);
+     }
+     else
+     {
+         cout << string(maxrow-row, ' ');
+         print_row(row);
+
+         triangle(maxrow, row+1);
+
+         cout << string(maxrow-row, ' ');
+         print_row(row);
+     }
+}
+int puzzle(int start, int end)
+{
+    if (start > end)
+        return start - end;
+    else if (start == end)
+        return start + end;
+    else
+        return end * puzzle(start + 1, end - 1);
+}
+int main(int argc, char **argv) {
+
+}
+
+

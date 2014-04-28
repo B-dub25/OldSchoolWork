@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 resources to &apos;mid&apos;" description="Move 1 resources to &apos;mid&apos;" destination="/mid" element1="/mp4/disitance.h" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1362084211765" updateReferences="true"/>
+</session>

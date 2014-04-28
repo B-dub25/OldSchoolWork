@@ -1,0 +1,6 @@
+16:51:26 **** Build of configuration Default for project cplusplus ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+16:51:26 Build Finished (took 68ms)
+

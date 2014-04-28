@@ -1,0 +1,37 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Oct 1, 2013
+ *      Author: brian
+ */
+
+
+#include "intEntery.h"
+#include <list>
+
+void loadPrimes(list<intEntery> primes, int n){
+	int x = n;
+	int sum = 1;
+
+	for(int i = 1; i < x && sum != n ; i++)
+	for(int j = 2; j < x; ++j){
+		if(i % j != 0){
+			intEntery prime(j);
+			primes.push_front(prime);
+			sum*= j;
+		    x = x / j;
+		}
+	}
+
+}
+
+
+int main(int argc, char **argv) {
+
+	list<intEntery> mylist;
+	list<intEntery> otherList;
+
+
+}
+
+

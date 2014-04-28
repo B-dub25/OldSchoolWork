@@ -1,0 +1,15 @@
+package linker;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		LinkList<String> myLinkList = new LinkList<>();
+		for (char i = 'a'; i <= 'z'; i++){
+			myLinkList.pushBack(String.valueOf(i));
+			
+		}
+		System.err.println(myLinkList);
+
+	}
+
+}

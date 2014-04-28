@@ -1,0 +1,9 @@
+<?php
+require 'test.php';
+
+  $obj = new Test();
+  
+  $obj->myfun();
+  echo '\n';
+
+?>

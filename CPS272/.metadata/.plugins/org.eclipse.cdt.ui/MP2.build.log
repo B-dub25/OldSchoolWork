@@ -1,0 +1,7 @@
+17:17:50 **** Clean-only build of configuration Debug for project MP2 ****
+make clean 
+rm -rf  ./HomeWork2.o  ./HomeWork2.d  MP2
+ 
+
+17:17:51 Build Finished (took 116ms)
+

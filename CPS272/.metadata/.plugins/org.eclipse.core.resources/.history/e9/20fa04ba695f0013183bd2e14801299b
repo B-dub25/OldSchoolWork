@@ -1,0 +1,26 @@
+/*
+ * hashing.h
+ *
+ *  Created on: Dec 6, 2013
+ *      Author: brundel
+ */
+
+#ifndef HASHING_H_
+#define HASHING_H_
+#include "miniList.h"
+template<typename K, typename T>
+class hashing {
+public:
+	hashing<K,T>(int sz){
+		list = new miniList[sz];
+	}
+
+
+
+private:
+	miniList* list[];
+
+};
+
+
+#endif /* HASHING_H_ */

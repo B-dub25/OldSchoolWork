@@ -1,0 +1,114 @@
+import java.util.Arrays;
+
+public class SortedArray<E extends Comparable<E>> implements MaxItems{
+	
+	@SuppressWarnings("rawtypes")
+	private Comparable[] dataType;
+	private int[] index;
+	private int size;
+	//private static final int MAX = 100;
+	
+	@SuppressWarnings("unchecked")     
+	public SortedArray() {
+
+		size = 0;
+		index = new int[MAX];
+		dataType = new Comparable[MAX];
+		//index = Arrays.copyOf(dataType, MAX, Integer[].class);
+		dataType = (Comparable<E>[]) Arrays.copyOf(dataType, MAX,Comparable[].class);
+
+	}
+
+	/**
+	 * 
+	 * @param item
+	 * @param indexItem
+	 */
+	
+	public void insert(E item, int indexItem) {
+
+		int position = 0;
+        if(find(item)   < 0){
+        	for(position = size-1; position >= 0; --position)
+        		if(dataType[position].compareTo(item) < 0)
+        			 break;
+        		else{
+        			index[position+1]    = index[position]; 
+        			dataType[position+1] = dataType[position];
+        			 
+        		}
+          dataType[position+1] = item;
+          index[position+1]    = indexItem;
+          ++size;
+        }
+	}
+    /**
+     * 
+     * @param oldItem
+     * @param newItem
+     */
+	public void update(Integer oldItem , E newItem){
+		
+		int position = findItem(oldItem) , oldIndex =0; 
+		if(position >= 0){
+			oldIndex = index[position];
+			for (int i = position; i < size -1; ++i){
+				 dataType[i] = dataType[i+1];
+				 index[i]    = index[i+1];
+			}
+			size--;
+			insert(newItem, oldIndex);
+		}
+	}
+	
+	public int getIndex(int position){
+		return index[position];
+	}
+	public int getSize() {
+		return size;
+	}
+	/**
+     * 
+     * @param item
+     * @return
+     */
+	@SuppressWarnings("unchecked")
+	public int find(E item) {
+
+		int first = 0, last = size - 1, mid = 0;
+
+		while (first <= last) {
+
+			mid = (first + last) / 2;
+
+			if (dataType[mid].compareTo(item) == 0)
+				return index[mid];
+			else if (dataType[mid].compareTo(item) < 0)
+				first = mid + 1;
+			else
+				last = mid - 1;
+		}
+
+		return -1;
+	}
+	
+	public int findItem(Integer item) {
+
+		int first = 0, last = size - 1, mid = 0;
+
+		while (first <= last) {
+
+			mid = (first + last) / 2;
+
+			if (index[mid].compareTo(item) == 0)
+				return mid;
+			else if (index[mid].compareTo(item) < 0)
+				first = mid + 1;
+			else
+				last = mid - 1;
+		}
+
+		return -1;
+	}
+	
+}

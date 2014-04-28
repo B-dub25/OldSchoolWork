@@ -1,0 +1,7 @@
+12:08:24 **** Clean-only build of configuration Debug for project mp3 ****
+make clean 
+rm -rf  ./book.o ./main.o ./publication.o ./sales.o ./tape.o  ./book.d ./main.d ./publication.d ./sales.d ./tape.d  mp3
+ 
+
+12:08:25 Build Finished (took 116ms)
+

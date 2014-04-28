@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 6 elements from project &apos;fileio2&apos;&#x0A;- Original project: &apos;fileio2&apos;&#x0A;- Original elements:&#x0A;     dir&#x0A;     g.txt&#x0A;     me.txt&#x0A;     myfile&#x0A;     out.txt&#x0A;     z.txt" description="Delete elements" element1="out.txt" element2="z.txt" element3="myfile" element4="g.txt" element5="me.txt" element6="dir" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="6" stamp="1382666592672" subPackages="false" version="1.0"/>
+</session>

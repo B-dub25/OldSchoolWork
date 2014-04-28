@@ -1,0 +1,72 @@
+package fileio;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Concat {
+
+	public void copy(InputStream is, PrintStream ps) {
+		
+		Scanner infileScanner = new Scanner(is);
+		while (infileScanner.hasNext()) {
+			String temp = (String) infileScanner.nextLine();
+			ps.println(temp);
+		}
+		infileScanner.close();
+	}
+
+	void concat(String[] inFiles, int numInputs, String outFile) {
+		File myFile = new File(outFile);
+		InputStream myInfile = null;
+		if ( myFile == null || !(myFile.canWrite())) {
+			System.out.println("Output file is ether null or can't be opened ");
+		}
+		try {
+			PrintWriter outPrintWriter = new PrintWriter(new FileOutputStream(myFile,true));
+		    for (int i = 0; i < inFiles.length; i++) {
+			File infile = new File(inFiles[i]);
+			if(!infile.canRead()){
+				throw new RuntimeException();
+			}
+		
+			copy(new FileInputStream(infile), outFile);
+		    }
+		} catch (FileNotFoundException e) {
+			// TODO: handle exception
+		} catch (RuntimeException e) {
+			
+		}
+		
+		// if outFile = = null, or "outFile" can't be opened then write output
+		// the screen.
+		// otherwise, create an output file associated with the name "outFile"
+
+		// Using your "copy" routine defined above, copy "numInputs" of files
+		// from the inFiles array to your
+		// output file (or screen)
+
+		// If any of the input files can't be opened, throw a RuntimeException
+		// with a message like:
+		// "Unable to open: file_1.txt
+
+		// All input files should have a suffix of either ".java" or ".txt". If
+		// a file is found without one of these 2
+		// suffixes, throw a RuntimeException with a message like:
+		// ("Input files for Concat must have either a .java or .txt suffix: file_1.bad"
+		// Don't forget to close your input and output files at appropriate
+		// places.
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

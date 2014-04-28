@@ -1,0 +1,23 @@
+/*
+ * intEntery.h
+ *
+ *  Created on: Oct 1, 2013
+ *      Author: brian
+ */
+
+#ifndef INTENTERY_H_
+#define INTENTERY_H_
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+
+class intEntery{
+
+
+};
+
+
+#endif /* INTENTERY_H_ */

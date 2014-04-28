@@ -1,0 +1,11 @@
+<?php
+class Test{
+	
+	private $my = "Brian";
+	public function myfun(){
+		
+		print "Hello";
+		
+	}
+}
+?>

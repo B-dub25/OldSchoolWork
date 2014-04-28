@@ -1,0 +1,36 @@
+package linker;
+
+public class LinkList<G extends Comparable<G>> {
+
+	private class Node<T> {
+
+		private Node<T> nextLink;
+		private T typeT;
+
+		private Node() {
+			nextLink = null;
+
+		}
+
+		private Node(T data, Node<T> link) {
+			typeT = data;
+			nextLink = link;
+		}
+	}
+
+	private Node<G> headNode;
+
+	public LinkList() {
+
+		headNode = null;
+	}
+	/**
+	 * This method will place the new element to the front of the list
+	 * @param typeG The type to be placed in the list has to implement
+	 * {@link <code> Comparable </code>} 
+	 * 
+	 */
+	private void push(G typeG) {
+		headNode = new Node<G>(typeG, headNode);
+	}
+}

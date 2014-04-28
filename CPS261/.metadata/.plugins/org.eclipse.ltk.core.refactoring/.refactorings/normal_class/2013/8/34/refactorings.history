@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;normal_class.Recta&apos; to &apos;Rectangle&apos;&#x0A;- Original project: &apos;normal_class&apos;&#x0A;- Original element: &apos;normal_class.Recta&apos;&#x0A;- Renamed element: &apos;normal_class.Rectangle&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Recta&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;normal_class{Recta.java[Recta" matchStrategy="1" name="Rectangle" qualified="false" references="true" similarDeclarations="false" stamp="1377308094013" textual="false" version="1.0"/>
+</session>

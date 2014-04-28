@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;iteration&apos; in &apos;myliner.Linker.Iterator&apos; to &apos;position&apos;&#x0A;- Original project: &apos;myliner&apos;&#x0A;- Original element: &apos;myliner.Linker.Iterator.iteration&apos;&#x0A;- Renamed element: &apos;myliner.Linker.Iterator.position&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;iteration&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;myliner{Linker.java[Linker[Iterator^iteration" name="position" references="true" setter="false" stamp="1379176118973" textual="false" version="1.0"/>
+</session>

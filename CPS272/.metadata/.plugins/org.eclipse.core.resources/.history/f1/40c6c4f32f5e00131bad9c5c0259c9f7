@@ -1,0 +1,45 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Dec 5, 2013
+ *      Author: brundel
+ */
+
+#include <iostream>
+#include <set>
+#include <map>
+#include <utility>
+
+using namespace std;
+using namespace __gnu_cxx;
+
+template<typename T>
+class freq
+{
+public:
+
+	freq(T v, T cnt = 1) : value(v), count(cnt) {}
+    T increment() { return count++ ; }
+    T getValue() const { return value; }
+    int getCount() const { return count; }
+friend bool operator < ( const freq& a, const freq& b){
+	return a.value < b.value ;
+}
+friend bool operator <= ( const freq& a, const freq& b){
+	return a.value <= b.value ;
+}
+private:
+		T value;
+		T count;
+};
+
+int main(){
+
+	int arr[] = {6,3,3,9,4,9,6,9,3};
+	map<int,int> m;
+	map<int,int>::iterator it;
+	m[arr[0]];
+	it = m.begin();
+	cout << *it;
+}
+

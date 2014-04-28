@@ -1,0 +1,105 @@
+package fileio;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.util.Scanner;
+
+public class Concat {
+
+	public void copy(InputStream is, PrintStream ps) {
+
+		Scanner infileScanner = new Scanner(is);
+		while (infileScanner.hasNext()) {
+			String temp = (String) infileScanner.nextLine();
+			ps.println(temp);
+		}
+		infileScanner.close();
+	}
+
+	void concat(String[] inFiles, int numInputs, String outFile) {
+		File myFile = null;
+		Scanner inPutScanner = new Scanner(System.in);
+		if (inFiles.length == 0) {
+			inFiles = new String[3]; // I only allow 3 files names.
+			for (int i = 0; i < inFiles.length; i++) {
+				System.out.println("Please enter file " + (i + 1) + " name ");
+				inFiles[i] = inPutScanner.next();
+			}
+		}
+		inPutScanner.close();
+
+		for (int i = 0; i < numInputs; i++) {
+			if (!(new File(inFiles[i]).canRead())
+					|| !(new File(inFiles[i]).exists()))
+				throw new RuntimeException("Unable to open " + inFiles[i]
+						+ " check to see if it exists ");
+			else if (!inFiles[i].subSequence(inFiles[i].length() - 3,
+					inFiles[i].length()).equals("txt")
+					&& !inFiles[i].subSequence(inFiles[i].length() - 4,
+							inFiles[i].length()).equals("java"))
+				throw new RuntimeException("Bad file suffex ");
+		}
+
+		try {
+			if (outFile == null)
+				for (int i = 0; i < numInputs; i++) {
+					copy((new FileInputStream(inFiles[i])), System.out);
+				}
+			else {
+				if (!new File(outFile).exists()) {
+					myFile = new File(outFile);
+					myFile.createNewFile();
+				}else{
+					myFile = new File(outFile);
+					for (int i = 0; i < numInputs; i++) {
+						copy(new FileInputStream(inFiles[i]), new PrintStream(
+								new FileOutputStream(myFile, true)));
+					}
+				}
+			}
+		} catch (FileNotFoundException e) { // catch the checkable throws clause
+											// from FileInputStream
+			System.out
+					.println("File not fount or don't have permissions on file."
+							+ "\n Please check and try again");
+
+			// Catch the checkable exception
+		} catch (IOException e) {
+			// handle creatNewFile exception to keep compiler happy.
+		}
+	}
+
+	public void process(String[] args) {
+		switch (args.length) {
+		case 0:
+			System.out
+					.println("No input files, defaulting to reading from the keyboard and writing to the screen");
+			concat(args, 0, null);
+			break;
+		case 1:
+			System.out
+					.println("No output file, defaulting to writing to the screen");
+			concat(args, 1, null);
+			break;
+		default:
+			concat(args, args.length - 1, args[args.length - 1]);
+			break;
+		}
+	}
+
+	public static void main(String[] args) {
+		Concat concat = new Concat();
+		try {
+			concat.process(args);
+		} catch (RuntimeException e) {
+
+			System.out.println(" Error in Concat:" + e);
+		}
+	}
+
+}

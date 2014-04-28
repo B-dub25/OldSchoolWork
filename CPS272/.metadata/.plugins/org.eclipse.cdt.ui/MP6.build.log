@@ -1,0 +1,6 @@
+23:03:42 **** Incremental Build of configuration Debug for project MP6 ****
+make all 
+make: Nothing to be done for `all'.
+
+23:03:43 Build Finished (took 106ms)
+

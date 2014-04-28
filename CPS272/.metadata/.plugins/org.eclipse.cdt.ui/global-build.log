@@ -1,0 +1,2779 @@
+22:47:06 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h:21:2: error: ‘node’ does not name a type
+  node* getnode() {
+  ^
+../miniList.h:25:2: error: ‘node’ does not name a type
+  node* operator[](int i){
+  ^
+../miniList.h:38:17: error: ‘node’ has not been declared
+  void printList(node* current);
+                 ^
+../miniList.h:39:2: error: ‘node’ does not name a type
+  node* headNode[];
+  ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:30:3: error: ‘headNode’ was not declared in this scope
+   headNode[sz];
+   ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:3: error: no match for ‘operator[]’ (operand types are ‘miniList’ and ‘int’)
+  l[0] = 15;
+   ^
+make: *** [driver.o] Error 1
+22:47:25 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘node* miniList::getnode()’:
+../miniList.h:23:10: error: cannot convert ‘node**’ to ‘node*’ in return
+   return headNode;
+          ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:31:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:7: error: lvalue required as left operand of assignment
+  l[0] = 15;
+       ^
+make: *** [driver.o] Error 1
+22:47:37 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:29:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:7: error: lvalue required as left operand of assignment
+  l[0] = 15;
+       ^
+make: *** [driver.o] Error 1
+22:50:00 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../miniList.h:13:0,
+                 from ../driver.cpp:11:
+../Node.h:27:32: error: ‘node* node::operator=(int, int)’ must take exactly one argument
+  node* operator=(int i, int lhs){
+                                ^
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:29:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:7: error: lvalue required as left operand of assignment
+  l[0] = 15;
+       ^
+make: *** [driver.o] Error 1
+22:50:31 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../miniList.h:13:0,
+                 from ../driver.cpp:11:
+../Node.h:27:32: error: ‘node* node::operator=(int, int)’ must take exactly one argument
+  node* operator=(int i, int lhs){
+                                ^
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:29:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:7: error: lvalue required as left operand of assignment
+  l[0] = 15;
+       ^
+make: *** [driver.o] Error 1
+22:50:37 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:29:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:7: error: lvalue required as left operand of assignment
+  l[0] = 15;
+       ^
+make: *** [driver.o] Error 1
+22:52:07 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../miniList.h:13:0,
+                 from ../driver.cpp:11:
+../Node.h: In member function ‘node& node::operator=(int)’:
+../Node.h:29:10: error: invalid initialization of non-const reference of type ‘node&’ from an rvalue of type ‘node* const’
+   return this;
+          ^
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:29:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:7: error: lvalue required as left operand of assignment
+  l[0] = 15;
+       ^
+make: *** [driver.o] Error 1
+22:52:21 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘node& miniList::operator[](int)’:
+../miniList.h:25:20: error: invalid initialization of reference of type ‘node&’ from expression of type ‘node*’
+   return headNode[i];
+                    ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:29:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../miniList.h: In member function ‘node& miniList::operator[](int)’:
+../miniList.h:26:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [driver.o] Error 1
+22:52:28 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:29:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:7: error: lvalue required as left operand of assignment
+  l[0] = 15;
+       ^
+make: *** [driver.o] Error 1
+22:54:35 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:29:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:00:54 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:38:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:00:58 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+23:02:34 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘int miniList::hash(int)’:
+../miniList.h:32:37: error: expected primary-expression before ‘]’ token
+   return hashCode % sizeof(headNode[]);
+                                     ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:39:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../miniList.h: In member function ‘int miniList::hash(int)’:
+../miniList.h:33:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [driver.o] Error 1
+23:02:40 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘int miniList::hash(int)’:
+../miniList.h:32:37: error: expected primary-expression before ‘]’ token
+   return hashCode % sizeof(headNode[]);
+                                     ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:39:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+../miniList.h: In member function ‘int miniList::hash(int)’:
+../miniList.h:33:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [driver.o] Error 1
+23:02:45 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘int miniList::hash(int)’:
+../miniList.h:32:36: warning: division by zero [-Wdiv-by-zero]
+   return hashCode % sizeof(headNode);
+                                    ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:39:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:03:04 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:39:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:04:25 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘void miniList::put(int)’:
+../miniList.h:26:24: error: invalid conversion from ‘int’ to ‘node*’ [-fpermissive]
+   headNode[hash(item)] = item;
+                        ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:42:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+make: *** [driver.o] Error 1
+23:04:37 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:42:14: warning: statement has no effect [-Wunused-value]
+   headNode[sz];
+              ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:06:39 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘void miniList::print()’:
+../miniList.h:25:26: error: expected primary-expression before ‘)’ token
+      for(int i = 0 ; i < )
+                          ^
+../miniList.h:25:26: error: expected ‘;’ before ‘)’ token
+../miniList.h:26:5: error: expected primary-expression before ‘}’ token
+     }
+     ^
+../miniList.h:26:5: error: expected ‘;’ before ‘}’ token
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:45:12: error: incompatible types in assignment of ‘node*’ to ‘node* [0]’
+   headNode = new node[size];
+            ^
+make: *** [driver.o] Error 1
+23:07:35 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘void miniList::print()’:
+../miniList.h:25:26: error: expected primary-expression before ‘)’ token
+      for(int i = 0 ; i < )
+                          ^
+../miniList.h:25:26: error: expected ‘;’ before ‘)’ token
+../miniList.h:26:5: error: expected primary-expression before ‘}’ token
+     }
+     ^
+../miniList.h:26:5: error: expected ‘;’ before ‘}’ token
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:45:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+make: *** [driver.o] Error 1
+23:08:31 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘void miniList::print()’:
+../miniList.h:27:25: error: ‘null’ was not declared in this scope
+       if(headNode[i] != null)
+                         ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:48:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+make: *** [driver.o] Error 1
+23:08:52 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:48:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:09:09 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:48:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:09:12 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+23:09:20 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+23:10:08 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:48:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:10:29 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:11:17 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:12:09 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘void miniList::print()’:
+../miniList.h:29:29: error: request for member ‘data’ in ‘*((miniList*)this)->miniList::headNode[i]’, which is of pointer type ‘node*’ (maybe you meant to use ‘->’ ?)
+        cout << headNode[i]->data;
+                             ^
+../miniList.h: In member function ‘void miniList::put(int)’:
+../miniList.h:32:24: error: cannot convert ‘node*’ to ‘node**’ in assignment
+   headNode[hash(item)] = new node(item);
+                        ^
+../miniList.h: In member function ‘int& miniList::operator[](int)’:
+../miniList.h:44:26: error: invalid initialization of reference of type ‘int&’ from expression of type ‘node**’
+   return headNode[hash(i)];
+                          ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+../miniList.h:51:16: error: cannot convert ‘node*’ to ‘node**’ in assignment
+    headNode[i] = new node();
+                ^
+../miniList.h: In member function ‘int& miniList::operator[](int)’:
+../miniList.h:45:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [driver.o] Error 1
+23:12:29 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘int& miniList::operator[](int)’:
+../miniList.h:44:26: error: invalid initialization of reference of type ‘int&’ from expression of type ‘node*’
+   return headNode[hash(i)];
+                          ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+../miniList.h: In member function ‘int& miniList::operator[](int)’:
+../miniList.h:45:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [driver.o] Error 1
+23:12:37 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:12:42 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+23:13:50 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:13:54 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+23:14:04 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:15:10 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:12: error: incompatible types in assignment of ‘node*’ to ‘node* [0]’
+   headNode = new node[size];
+            ^
+make: *** [driver.o] Error 1
+23:15:51 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In member function ‘void miniList::print()’:
+../miniList.h:28:23: error: request for member ‘data’ in ‘*((miniList*)this)->miniList::headNode[i]’, which is of pointer type ‘node*’ (maybe you meant to use ‘->’ ?)
+       if(headNode[i]->data != 0)
+                       ^
+../miniList.h:29:29: error: request for member ‘data’ in ‘*((miniList*)this)->miniList::headNode[i]’, which is of pointer type ‘node*’ (maybe you meant to use ‘->’ ?)
+        cout << headNode[i]->data;
+                             ^
+../miniList.h: In member function ‘void miniList::put(int)’:
+../miniList.h:32:24: error: cannot convert ‘node*’ to ‘node**’ in assignment
+   headNode[hash(item)] = new node(item);
+                        ^
+../miniList.h: In member function ‘int& miniList::operator[](int)’:
+../miniList.h:44:29: error: request for member ‘data’ in ‘*((miniList*)this)->miniList::headNode[miniList::hash(i)]’, which is of pointer type ‘node*’ (maybe you meant to use ‘->’ ?)
+   return headNode[hash(i)]->data;
+                             ^
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:12: error: incompatible types in assignment of ‘node**’ to ‘node** [0]’
+   headNode = new node*[size];
+            ^
+../miniList.h:51:16: error: cannot convert ‘node*’ to ‘node**’ in assignment
+    headNode[i] = new node();
+                ^
+../miniList.h: In member function ‘int& miniList::operator[](int)’:
+../miniList.h:45:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [driver.o] Error 1
+23:16:08 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:12: error: incompatible types in assignment of ‘node*’ to ‘node* [10]’
+   headNode = new node[size];
+            ^
+make: *** [driver.o] Error 1
+23:16:18 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:16:42 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:17:06 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:17:24 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:17:55 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:18:06 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:18:42 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:19:00 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:19:11 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:19:32 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:19:52 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+23:20:03 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../miniList.h: In constructor ‘miniList::miniList(int)’:
+../miniList.h:49:16: warning: statement has no effect [-Wunused-value]
+   headNode[size];
+                ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:19:09 **** Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:23:39 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+00:23:47 **** Clean-only build of configuration Debug for project hash ****
+make clean 
+rm -rf  ./driver.o  ./driver.d  hash
+ 
+00:26:26 **** Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:29:24: error: ‘entry’ was not declared in this scope
+                  hash *entry = table[hash];
+                        ^
+../hashMap.h: In member function ‘void HashMap::put(int, int)’:
+../hashMap.h:44:43: error: expected primary-expression before ‘]’ token
+                   hash *entry = table[hash];
+                                           ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:57:25: error: ‘prevEntry’ was not declared in this scope
+                   hash *prevEntry = NULL;
+                         ^
+../hashMap.h:58:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h:65:36: error: ‘nextEntry’ was not declared in this scope
+                              hash *nextEntry = entry->getNext();
+                                    ^
+../hashMap.h:66:37: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                              delete entry;
+                                     ^
+../hashMap.h:69:36: error: ‘next’ was not declared in this scope
+                              hash *next = entry->getNext();
+                                    ^
+../hashMap.h:70:38: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                               delete entry;
+                                      ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:2: error: ‘hashMap’ was not declared in this scope
+  hashMap map;
+  ^
+../driver.cpp:20:10: error: expected ‘;’ before ‘map’
+  hashMap map;
+          ^
+../driver.cpp:21:2: error: ‘map’ was not declared in this scope
+  map.put(8,20);
+  ^
+make: *** [driver.o] Error 1
+00:26:58 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:29:24: error: ‘entry’ was not declared in this scope
+                  hash *entry = table[hash];
+                        ^
+../hashMap.h: In member function ‘void HashMap::put(int, int)’:
+../hashMap.h:44:43: error: expected primary-expression before ‘]’ token
+                   hash *entry = table[hash];
+                                           ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:57:25: error: ‘prevEntry’ was not declared in this scope
+                   hash *prevEntry = NULL;
+                         ^
+../hashMap.h:58:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h:65:36: error: ‘nextEntry’ was not declared in this scope
+                              hash *nextEntry = entry->getNext();
+                                    ^
+../hashMap.h:66:37: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                              delete entry;
+                                     ^
+../hashMap.h:69:36: error: ‘next’ was not declared in this scope
+                              hash *next = entry->getNext();
+                                    ^
+../hashMap.h:70:38: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                               delete entry;
+                                      ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:2: error: ‘hashMap’ was not declared in this scope
+  hashMap map;
+  ^
+../driver.cpp:20:10: error: expected ‘;’ before ‘map’
+  hashMap map;
+          ^
+../driver.cpp:21:2: error: ‘map’ was not declared in this scope
+  map.put(8,20);
+  ^
+make: *** [driver.o] Error 1
+00:28:56 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:29:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h: In member function ‘void HashMap::put(int, int)’:
+../hashMap.h:44:43: error: expected primary-expression before ‘]’ token
+                   hash *entry = table[hash];
+                                           ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:57:25: error: ‘prevEntry’ was not declared in this scope
+                   hash *prevEntry = NULL;
+                         ^
+../hashMap.h:58:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h:65:36: error: ‘nextEntry’ was not declared in this scope
+                              hash *nextEntry = entry->getNext();
+                                    ^
+../hashMap.h:66:37: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                              delete entry;
+                                     ^
+../hashMap.h:69:36: error: ‘next’ was not declared in this scope
+                              hash *next = entry->getNext();
+                                    ^
+../hashMap.h:70:38: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                               delete entry;
+                                      ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:2: error: ‘hashMap’ was not declared in this scope
+  hashMap map;
+  ^
+../driver.cpp:20:10: error: expected ‘;’ before ‘map’
+  hashMap map;
+          ^
+../driver.cpp:21:2: error: ‘map’ was not declared in this scope
+  map.put(8,20);
+  ^
+make: *** [driver.o] Error 1
+00:29:28 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:29:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h: In member function ‘void HashMap::put(int, int)’:
+../hashMap.h:44:43: error: expected primary-expression before ‘]’ token
+                   hash *entry = table[hash];
+                                           ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:57:25: error: ‘prevEntry’ was not declared in this scope
+                   hash *prevEntry = NULL;
+                         ^
+../hashMap.h:58:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h:65:36: error: ‘nextEntry’ was not declared in this scope
+                              hash *nextEntry = entry->getNext();
+                                    ^
+../hashMap.h:66:37: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                              delete entry;
+                                     ^
+../hashMap.h:69:36: error: ‘next’ was not declared in this scope
+                              hash *next = entry->getNext();
+                                    ^
+../hashMap.h:70:38: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                               delete entry;
+                                      ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:2: error: ‘hashMap’ was not declared in this scope
+  hashMap map;
+  ^
+../driver.cpp:20:10: error: expected ‘;’ before ‘map’
+  hashMap map;
+          ^
+../driver.cpp:21:2: error: ‘map’ was not declared in this scope
+  map.put(8,20);
+  ^
+make: *** [driver.o] Error 1
+00:29:42 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:29:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h: In member function ‘void HashMap::put(int, int)’:
+../hashMap.h:44:43: error: expected primary-expression before ‘]’ token
+                   hash *entry = table[hash];
+                                           ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:57:25: error: ‘prevEntry’ was not declared in this scope
+                   hash *prevEntry = NULL;
+                         ^
+../hashMap.h:58:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h:65:36: error: ‘nextEntry’ was not declared in this scope
+                              hash *nextEntry = entry->getNext();
+                                    ^
+../hashMap.h:66:37: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                              delete entry;
+                                     ^
+../hashMap.h:69:36: error: ‘next’ was not declared in this scope
+                              hash *next = entry->getNext();
+                                    ^
+../hashMap.h:70:38: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                               delete entry;
+                                      ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:2: error: ‘hashMap’ was not declared in this scope
+  hashMap map;
+  ^
+../driver.cpp:20:10: error: expected ‘;’ before ‘map’
+  hashMap map;
+          ^
+../driver.cpp:21:2: error: ‘map’ was not declared in this scope
+  map.put(8,20);
+  ^
+make: *** [driver.o] Error 1
+00:30:16 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:29:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h: In member function ‘void HashMap::put(int, int)’:
+../hashMap.h:44:43: error: expected primary-expression before ‘]’ token
+                   hash *entry = table[hash];
+                                           ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:57:25: error: ‘prevEntry’ was not declared in this scope
+                   hash *prevEntry = NULL;
+                         ^
+../hashMap.h:58:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h:65:36: error: ‘nextEntry’ was not declared in this scope
+                              hash *nextEntry = entry->getNext();
+                                    ^
+../hashMap.h:66:37: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                              delete entry;
+                                     ^
+../hashMap.h:69:36: error: ‘next’ was not declared in this scope
+                              hash *next = entry->getNext();
+                                    ^
+../hashMap.h:70:38: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                               delete entry;
+                                      ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:2: error: ‘hashMap’ was not declared in this scope
+  hashMap map;
+  ^
+../driver.cpp:20:10: error: expected ‘;’ before ‘map’
+  hashMap map;
+          ^
+../driver.cpp:21:2: error: ‘map’ was not declared in this scope
+  map.put(8,20);
+  ^
+make: *** [driver.o] Error 1
+00:33:08 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:33:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:48:25: error: ‘prevEntry’ was not declared in this scope
+                   hash *prevEntry = NULL;
+                         ^
+../hashMap.h:49:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h:56:36: error: ‘nextEntry’ was not declared in this scope
+                              hash *nextEntry = entry->getNext();
+                                    ^
+../hashMap.h:57:37: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                              delete entry;
+                                     ^
+../hashMap.h:60:36: error: ‘next’ was not declared in this scope
+                              hash *next = entry->getNext();
+                                    ^
+../hashMap.h:61:38: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                               delete entry;
+                                      ^
+../hashMap.h: At global scope:
+../hashMap.h:83:6: error: ‘hashMap’ has not been declared
+ void hashMap::put(int key, int value ){
+      ^
+../hashMap.h: In function ‘void put(int, int)’:
+../hashMap.h:85:15: error: ‘table’ was not declared in this scope
+           if (table[hashCode] == NULL)
+               ^
+../hashMap.h:88:41: error: expected primary-expression before ‘]’ token
+                 hash *entry = table[hash];
+                                         ^
+../hashMap.h: At global scope:
+../hashMap.h:97:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [driver.o] Error 1
+00:33:37 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:33:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:48:25: error: ‘prevEntry’ was not declared in this scope
+                   hash *prevEntry = NULL;
+                         ^
+../hashMap.h:49:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h:56:36: error: ‘nextEntry’ was not declared in this scope
+                              hash *nextEntry = entry->getNext();
+                                    ^
+../hashMap.h:57:37: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                              delete entry;
+                                     ^
+../hashMap.h:60:36: error: ‘next’ was not declared in this scope
+                              hash *next = entry->getNext();
+                                    ^
+../hashMap.h:61:38: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                               delete entry;
+                                      ^
+../hashMap.h: In member function ‘void HashMap::put(int, int)’:
+../hashMap.h:88:41: error: expected primary-expression before ‘]’ token
+                 hash *entry = table[hash];
+                                         ^
+../hashMap.h: At global scope:
+../hashMap.h:97:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [driver.o] Error 1
+00:35:07 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:33:25: error: ‘entry’ was not declared in this scope
+                   hash *entry = table[hash];
+                         ^
+../hashMap.h: In member function ‘void HashMap::remove(int)’:
+../hashMap.h:64:17: error: ‘prevEntry’ was not declared in this scope
+           hash *prevEntry = NULL;
+                 ^
+../hashMap.h:65:17: error: ‘entry’ was not declared in this scope
+           hash *entry = table[hash];
+                 ^
+../hashMap.h:72:28: error: ‘nextEntry’ was not declared in this scope
+                      hash *nextEntry = entry->getNext();
+                            ^
+../hashMap.h:73:29: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                      delete entry;
+                             ^
+../hashMap.h:76:28: error: ‘next’ was not declared in this scope
+                      hash *next = entry->getNext();
+                            ^
+../hashMap.h:77:30: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+                       delete entry;
+                              ^
+../hashMap.h: In member function ‘void HashMap::put(int, int)’:
+../hashMap.h:89:41: error: expected primary-expression before ‘]’ token
+                 hash *entry = table[hash];
+                                         ^
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:20:2: error: ‘hashMap’ was not declared in this scope
+  hashMap map;
+  ^
+../driver.cpp:20:10: error: expected ‘;’ before ‘map’
+  hashMap map;
+          ^
+../driver.cpp:21:2: error: ‘map’ was not declared in this scope
+  map.put(8,20);
+  ^
+make: *** [driver.o] Error 1
+00:39:38 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:39:44 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+00:44:11 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:48:21: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  std::string temp = key;
+                     ^
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ../driver.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+In file included from ../driver.cpp:11:0:
+../hashMap.h:52:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [driver.o] Error 1
+00:44:23 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:44:28 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+00:44:40 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:47:14 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:50:16: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  string temp = key;
+                ^
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ../driver.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+In file included from ../driver.cpp:11:0:
+../hashMap.h:51:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i <= temp.length(); ++i)
+                                  ^
+make: *** [driver.o] Error 1
+00:47:51 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:50:39: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  string temp = static_cast<string>(key);
+                                       ^
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ../driver.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+In file included from ../driver.cpp:11:0:
+../hashMap.h:51:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i <= temp.length(); ++i)
+                                  ^
+make: *** [driver.o] Error 1
+00:48:13 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:50:28: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  string temp = (string)(key);
+                            ^
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ../driver.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+In file included from ../driver.cpp:11:0:
+../hashMap.h:51:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i <= temp.length(); ++i)
+                                  ^
+make: *** [driver.o] Error 1
+00:48:18 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:50:28: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  string temp = (string)(key);
+                            ^
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ../driver.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+In file included from ../driver.cpp:11:0:
+../hashMap.h:51:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i <= temp.length(); ++i)
+                                  ^
+make: *** [driver.o] Error 1
+00:50:04 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:13: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+  string i = 24;
+             ^
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ../driver.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+make: *** [driver.o] Error 1
+00:50:32 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:12: error: expected initializer before ‘i’
+  char ch[] i = 24;
+            ^
+make: *** [driver.o] Error 1
+00:51:43 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:30: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+    string a = ""; a.append(24);
+                              ^
+In file included from /usr/include/c++/4.8.2/string:52:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ../driver.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.h:1006:7: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ [-fpermissive]
+       append(const _CharT* __s)
+       ^
+make: *** [driver.o] Error 1
+00:52:23 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:23:10: warning: unused variable ‘a’ [-Wunused-variable]
+     char a = v;
+          ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:52:31 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:23:16: error: initializer fails to determine size of ‘a’
+     char a[] = v;
+                ^
+../driver.cpp:23:16: error: array must be initialized with a brace-enclosed initializer
+../driver.cpp:23:10: warning: unused variable ‘a’ [-Wunused-variable]
+     char a[] = v;
+          ^
+make: *** [driver.o] Error 1
+00:53:02 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:23:20: error: variable-sized object ‘a’ may not be initialized
+     char a[v/10] = v;
+                    ^
+../driver.cpp:23:10: warning: unused variable ‘a’ [-Wunused-variable]
+     char a[v/10] = v;
+          ^
+make: *** [driver.o] Error 1
+00:53:17 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:23:10: warning: unused variable ‘a’ [-Wunused-variable]
+     char a = v;
+          ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:53:29 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:53:31 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+00:55:50 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:55:34: error: ‘pow’ was not declared in this scope
+    hashCode += key * 7 + pow(i ,i);
+                                  ^
+make: *** [driver.o] Error 1
+00:56:01 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:56:24 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:56:27 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+00:56:47 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:56:53 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:57:06 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:57:20 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:57:38 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:57:51 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:58:02 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+00:58:13 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+08:56:12 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+08:56:22 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+08:56:31 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+08:57:48 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:51:10: warning: unused variable ‘ch’ [-Wunused-variable]
+     char ch;
+          ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+08:58:01 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:51:10: warning: unused variable ‘ch’ [-Wunused-variable]
+     char ch;
+          ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+08:59:34 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+08:59:51 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:00:02 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:00:23 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:00:37 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:00:48 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:00:58 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:01:10 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:01:57 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:02:06 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:02:17 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:02:33 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:03:30 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:03:44 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:03:58 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:04:13 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:04:27 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:04:48 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:05:05 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:06:14 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::hashIt(int)’:
+../hashMap.h:52:40: error: cannot dynamic_cast ‘key’ (of type ‘int’) to type ‘std::string {aka class std::basic_string<char>}’ (target is not pointer or reference)
+     string n = dynamic_cast<string>(key);
+                                        ^
+make: *** [driver.o] Error 1
+09:07:00 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:07:17 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:08:10 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:08:22 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:08:36 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:08:47 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:24:20: error: invalid operands of types ‘int’ and ‘__gnu_cxx::__promote_2<int, int, double, double>::__type {aka double}’ to binary ‘operator%’
+  k = k % pow(10 , 2);
+                    ^
+make: *** [driver.o] Error 1
+09:09:07 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:09:57 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:23:24: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+     string m = string(k);
+                        ^
+In file included from /usr/include/c++/4.8.2/string:53:0,
+                 from /usr/include/c++/4.8.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.2/ios:42,
+                 from /usr/include/c++/4.8.2/ostream:38,
+                 from /usr/include/c++/4.8.2/iostream:39,
+                 from ../driver.cpp:10:
+/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5: error:   initializing argument 1 of ‘std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+     ^
+make: *** [driver.o] Error 1
+09:10:13 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:10:54 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:11:05 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:11:46 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:12:05 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:12:42 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:13:08 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:13:26 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:13:34 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:14:03 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:14:11 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:14:28 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:15:17 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:15:31 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:15:48 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:16:04 **** Incremental Build of configuration Debug for project hash ****
+make all 
+make: Nothing to be done for `all'.
+09:16:13 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:16:31 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:16:50 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:17:06 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:18:01 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:18:16 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:18:37 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:18:50 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:19:14 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:19:33 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:20:01 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:20:12 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:48:52 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:49:10 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:51:21 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:52:52 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:53:04 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:53:59 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:54:30 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:55:03 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:55:55 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:56:47 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:57:02 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:57:26 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+../driver.cpp: In function ‘int main()’:
+../driver.cpp:22:9: warning: unused variable ‘k’ [-Wunused-variable]
+     int k = 203;
+         ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:58:00 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:58:04 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+09:58:16 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:00:54 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:01:53 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:01:59 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:02:12 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:79:7: warning: control reaches end of non-void function [-Wreturn-type]
+       }
+       ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:02:22 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:79:7: warning: control reaches end of non-void function [-Wreturn-type]
+       }
+       ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:02:47 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:11:0:
+../hashMap.h: In member function ‘int HashMap::get(int)’:
+../hashMap.h:79:7: warning: control reaches end of non-void function [-Wreturn-type]
+       }
+       ^
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:03:07 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:03:16 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:03:30 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:03:56 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:13:21 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 
+10:13:58 **** Incremental Build of configuration Debug for project hash ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: hash
+Invoking: Cross G++ Linker
+g++  -o "hash"  ./driver.o   
+Finished building target: hash
+ 

@@ -1,0 +1,56 @@
+
+public class DataBaseRecord {
+
+	private String id ;
+	private String firstName;
+	private String lastName;
+	
+	public DataBaseRecord() {
+	
+		id = "";
+		firstName = "";
+		lastName  = "";
+	}
+	
+	
+	public void setData(String identity , String fName, String lName){
+		
+		this.id = identity;
+		this.firstName = fName;
+		this.lastName  = lName;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if(obj == null)
+		   return false;
+		else if (getClass() != obj.getClass()) {
+			      return false;
+		}
+		else {
+			 DataBaseRecord tempRecord = (DataBaseRecord)obj;
+			 return (tempRecord.firstName.equals(firstName) 
+					 && tempRecord.lastName.equals(lastName) && tempRecord.id.equals(id));
+		}	
+	}
+	@Override
+	public String toString(){
+		
+		return (id + "\t" + firstName + "\t" + lastName);
+		
+	}
+	
+	public Object clone() {
+		
+		try{
+			DataBaseRecord clonedRecord = (DataBaseRecord)super.clone();
+			clonedRecord.id = this.id;
+			clonedRecord.firstName = this.firstName;
+			clonedRecord.lastName = this.lastName;
+			return clonedRecord;
+		} catch (CloneNotSupportedException e){
+			  return null;
+		}
+	}
+}

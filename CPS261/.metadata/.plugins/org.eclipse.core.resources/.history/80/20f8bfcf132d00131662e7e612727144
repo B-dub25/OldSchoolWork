@@ -1,0 +1,82 @@
+package doublyLinkedList;
+
+public class DoublyLinkedList {
+
+	private class Node {
+
+		private Node nextedLink;
+		private Node previousLink;
+		String data;
+
+		private Node() {
+			nextedLink = null;
+			previousLink = null;
+			data = "";
+		}
+
+		private Node(String info, Node previous, Node next) {
+			data = info;
+			previousLink = previous;
+			nextedLink = next;
+		}
+	}
+
+	private Node headNode;
+
+	public DoublyLinkedList() {
+
+		headNode = null;
+	}
+
+	public void push(String info) {
+
+		Node tempNode = new Node(info, null, headNode);
+		if (headNode != null) {
+			headNode.previousLink = tempNode;
+		}
+		headNode = tempNode;
+	}
+
+	public void pushBack(String info) {
+
+		if (headNode == null)
+			push(info);
+		else{
+
+			Node currentNode = headNode;
+			
+			while (currentNode.nextedLink != null)
+				currentNode = currentNode.nextedLink;
+			
+			currentNode.nextedLink = new Node(info, currentNode, null);
+		}
+	}
+	public void insert(String info){
+		
+		if(headNode == null || headNode.data.compareTo(info) > 0)
+			push(info);
+		else {
+			
+			Node current = new Node(info, null, null);
+			
+			while(current != null && (current.data.compareTo(info) < 0))
+				current = current.nextedLink;
+			
+			
+			
+			current.previousLink.nextedLink = new Node(info, current.previousLink, current);
+		}
+	}
+	
+	public void print() {
+		
+		Node current = headNode;
+		
+		while(current != null){
+			System.out.println(current.data);
+			current = current.nextedLink;
+		}
+			
+	}
+	
+}

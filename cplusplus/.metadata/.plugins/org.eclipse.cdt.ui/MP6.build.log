@@ -1,0 +1,20 @@
+16:03:30 **** Incremental Build of configuration Debug for project MP6 ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building file: ../stockType.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"stockType.d" -MT"stockType.d" -o "stockType.o" "../stockType.cpp"
+Finished building: ../stockType.cpp
+ 
+Building target: MP6
+Invoking: Cross G++ Linker
+g++  -o "MP6"  ./driver.o ./stockType.o   
+Finished building target: MP6
+ 
+
+16:03:34 Build Finished (took 3s.642ms)
+

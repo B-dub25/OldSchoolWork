@@ -1,0 +1,15 @@
+15:58:29 **** Incremental Build of configuration Debug for project Shapes ****
+make all 
+Building file: ../rectangle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"rectangle.d" -MT"rectangle.d" -o "rectangle.o" "../rectangle.cpp"
+Finished building: ../rectangle.cpp
+ 
+Building target: Shapes
+Invoking: Cross G++ Linker
+g++  -o "Shapes"  ./Triangle.o ./diamond.o ./driver.o ./rectangle.o   
+Finished building target: Shapes
+ 
+
+15:58:29 Build Finished (took 264ms)
+

@@ -1,0 +1,23 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Dec 4, 2013
+ *      Author: brundel
+ */
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+template<typename T>
+void f(list<T>& alist){
+
+}
+
+
+int main(){
+
+
+}
+

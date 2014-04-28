@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1365303884881" analysisTimestamp="1365303884469" release="">
+  <Project projectName="RomanCalulator">
+    <Jar>/home/brian/javaprogs/RomanCalulator/bin</Jar>
+    <AuxClasspathEntry>/home/brian/javaprogs/RomanCalulator/bin</AuxClasspathEntry>
+    <SrcDir>/home/brian/javaprogs/RomanCalulator/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="romancalulator.Romancalulator">
+      <SourceLine classname="romancalulator.Romancalulator" sourcefile="Romancalulator.java" sourcepath="romancalulator/Romancalulator.java"/>
+    </Class>
+    <Method classname="romancalulator.Romancalulator" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="romancalulator.Romancalulator" start="12" end="12" startBytecode="0" endBytecode="68" sourcefile="Romancalulator.java" sourcepath="romancalulator/Romancalulator.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="romancalulator.Romancalulator" start="14" end="14" startBytecode="12" endBytecode="12" sourcefile="Romancalulator.java" sourcepath="romancalulator/Romancalulator.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="romancalulator.Romancalulator">
+      <SourceLine classname="romancalulator.Romancalulator" sourcefile="Romancalulator.java" sourcepath="romancalulator/Romancalulator.java"/>
+    </Class>
+    <Method classname="romancalulator.Romancalulator" name="convert_to_Roman" signature="(I)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="romancalulator.Romancalulator" start="61" end="84" startBytecode="0" endBytecode="557" sourcefile="Romancalulator.java" sourcepath="romancalulator/Romancalulator.java"/>
+    </Method>
+    <SourceLine classname="romancalulator.Romancalulator" start="63" end="63" startBytecode="8" endBytecode="8" sourcefile="Romancalulator.java" sourcepath="romancalulator/Romancalulator.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 11 Mar 2013 21:52:40 -0400" total_classes="2" referenced_classes="15" total_bugs="2" total_size="91" num_packages="1" vm_version="23.7-b01" cpu_seconds="1.04" clock_seconds="0.41" peak_mbytes="308.82" alloc_mbytes="455.12" gc_seconds="0.01" priority_2="1" priority_1="1">
+    <PackageStats package="romancalulator" total_bugs="2" total_types="2" total_size="91" priority_2="1" priority_1="1">
+      <ClassStats class="romancalulator.Driver" sourceFile="Driver.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="romancalulator.Romancalulator" sourceFile="Romancalulator.java" interface="false" size="82" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="98" invocations="359" avgMicrosecondsPerInvocation="275" maxMicrosecondsPerInvocation="9960" standardDeviationMircosecondsPerInvocation="644"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="44" invocations="2" avgMicrosecondsPerInvocation="22441" maxMicrosecondsPerInvocation="36003" standardDeviationMircosecondsPerInvocation="13562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="32" invocations="328" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="1492" standardDeviationMircosecondsPerInvocation="167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="25" invocations="360" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="296" standardDeviationMircosecondsPerInvocation="21"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="21" invocations="15" avgMicrosecondsPerInvocation="1402" maxMicrosecondsPerInvocation="6899" standardDeviationMircosecondsPerInvocation="1865"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="11" invocations="9" avgMicrosecondsPerInvocation="1311" maxMicrosecondsPerInvocation="6633" standardDeviationMircosecondsPerInvocation="1920"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="11" invocations="16" avgMicrosecondsPerInvocation="727" maxMicrosecondsPerInvocation="10993" standardDeviationMircosecondsPerInvocation="2650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="11" invocations="9" avgMicrosecondsPerInvocation="1286" maxMicrosecondsPerInvocation="6716" standardDeviationMircosecondsPerInvocation="1944"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1365303884880" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

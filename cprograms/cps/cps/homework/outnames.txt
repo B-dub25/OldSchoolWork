@@ -1,0 +1,39 @@
+                         MMN    Bach,   Johann    S.  Mr.Johann  S.   Bach          
+FSDCurie,     Marie A.                                Dr.Marie   A.   Curie         
+MWNCarter, Billy Bob                                  Mr.Billy        Carter        
+FDD Parker, Alice   M.                                Dr.Alice   M.   Parker        
+MDNBear,   Smokey T.                                  Mr.Smokey  T.   Bear          
+FWDOakley, Annie Phoebe Moses                         Dr.Annie        Oakley        
+MSNLivingston,  Alan    W.                            Mr.Alan    W.   Livingston    
+FMDLamar, Hedy                                        Dr.Hedy         Lamar         
+MMD  Geyer,   Robert p.                               Dr.Robert  P.   Geyer         
+FSNHooper,  Grace Murray                              Ms.Grace        Hooper        
+MWD  Scott,     George     c.                         Dr.George  C.   Scott         
+FDNOyl, Olive                                         Ms.Olive        Oyl           
+MDD   Thompson,   Kenneth Lane                        Dr.Kenneth      Thompson      
+FWN      Williams, Marian   G.                        Ms.Marian  G.   Williams      
+MMD    Ritchie,    Dennis     M.                      Dr.Dennis  M.   Ritchie       
+FSN    Lovelace, Ada                                  Ms.Ada          Lovelace      
+MMN Connery, Thomas Sean                              Mr.Thomas       Connery       
+MMDBear, Yogi                                         Dr.Yogi         Bear          
+MMD   Bear, Booboo                                    Dr.Booboo       Bear          
+MMNSquare-pants, Sponge B.                            Mr.Sponge  B.   Square-pants  
+FWN  Vader,        Loraine                            Ms.Loraine      Vader         
+FWDRabbit, Jessica D.                                 Dr.Jessica D.   Rabbit        
+MWD Kernighan,  Brian    W.                           Dr.Brian   W.   Kernighan     
+MSD                        Aho,Alfred V.              Dr.Alfred  V.   Aho           
+MMD Weinberger,Peter J.                               Dr.Peter   J.   Weinberger    
+MMD Torvalds,               Linus                B.   Dr.Linus   B.   Torvalds      
+MMN Baum, Lyman F.                                    Mr.Lyman   F.   Baum          
+FSN Gale,                  Dorothy                    Ms.Dorothy      Gale          
+FDN St. John,        Mary I.                          Ms.Mary         St. John      
+MSN Wogglebug, Highly Magnified T.                    Mr.Highly  T.   Wogglebug     
+MSDPascal,              Blaise                        Dr.Blaise       Pascal        
+FMNRemen,Janet            M.                         Mrs.Janet   M.   Remen         
+
+******************************
+Married 12
+Divorced 5
+Single 8
+Widowed 7
+******************************

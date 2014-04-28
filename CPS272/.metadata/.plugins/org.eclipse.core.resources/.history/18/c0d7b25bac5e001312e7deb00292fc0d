@@ -1,0 +1,22 @@
+/*
+ * hashing.h
+ *
+ *  Created on: Dec 6, 2013
+ *      Author: brundel
+ */
+
+#ifndef HASHING_H_
+#define HASHING_H_
+#include "miniList.h"
+
+class hashing {
+public:
+
+
+private:
+};
+
+
+
+
+#endif /* HASHING_H_ */

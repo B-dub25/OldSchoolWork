@@ -1,0 +1,7 @@
+20:38:46 **** Clean-only build of configuration Debug for project classRandomFiles ****
+make clean 
+rm -rf  ./driver.o  ./driver.d  classRandomFiles
+ 
+
+20:38:46 Build Finished (took 57ms)
+

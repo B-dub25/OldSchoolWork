@@ -1,0 +1,177 @@
+{
+  "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.25-2.3.12.3.fc19.x86_64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.25-2.3.12.3.fc19.x86_64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/brian/Programming/CPS261/setw/src": {
+    "location": "/home/brian/Programming/CPS261/setw/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/setw/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/node/src": {
+    "location": "/home/brian/Programming/CPS261/node/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/node/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/linker/src": {
+    "location": "/home/brian/Programming/CPS261/linker/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/linker/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/mylinkedlist/src": {
+    "location": "/home/brian/Programming/CPS261/mylinkedlist/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/mylinkedlist/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/graphing/src": {
+    "location": "/home/brian/Programming/CPS261/graphing/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/graphing/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/drawing/src": {
+    "location": "/home/brian/Programming/CPS261/drawing/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/drawing/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/myliner/src": {
+    "location": "/home/brian/Programming/CPS261/myliner/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/myliner/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/mylinklist/src": {
+    "location": "/home/brian/Programming/CPS261/mylinklist/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/mylinklist/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/myLinkedList/src": {
+    "location": "/home/brian/Programming/CPS261/myLinkedList/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/myLinkedList/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/linking/src": {
+    "location": "/home/brian/Programming/CPS261/linking/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/linking/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/chess/src": {
+    "location": "/home/brian/Programming/CPS261/chess/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/chess/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/list/src": {
+    "location": "/home/brian/Programming/CPS261/list/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/list/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/mylist/src": {
+    "location": "/home/brian/Programming/CPS261/mylist/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/mylist/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/linklist2/src": {
+    "location": "/home/brian/Programming/CPS261/linklist2/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/linklist2/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/linklist/src": {
+    "location": "/home/brian/Programming/CPS261/linklist/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/linklist/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/linkedlist/src": {
+    "location": "/home/brian/Programming/CPS261/linkedlist/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/linkedlist/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/drawing2/src": {
+    "location": "/home/brian/Programming/CPS261/drawing2/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/drawing2/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/doubly/src": {
+    "location": "/home/brian/Programming/CPS261/doubly/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/doubly/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/doublyLink/src": {
+    "location": "/home/brian/Programming/CPS261/doublyLink/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/doublyLink/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/mystack/src": {
+    "location": "/home/brian/Programming/CPS261/mystack/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/mystack/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/doublyLinkedList/src": {
+    "location": "/home/brian/Programming/CPS261/doublyLinkedList/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/doublyLinkedList/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/myStack/src": {
+    "location": "/home/brian/Programming/CPS261/myStack/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/myStack/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/myList/src": {
+    "location": "/home/brian/Programming/CPS261/myList/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/myList/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/midterm/src": {
+    "location": "/home/brian/Programming/CPS261/midterm/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/midterm/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/calculator/src": {
+    "location": "/home/brian/Programming/CPS261/calculator/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/calculator/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/calApplet/src": {
+    "location": "/home/brian/Programming/CPS261/calApplet/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/calApplet/src\u0027. Skipped."
+  },
+  "/home/brian/Programming/CPS261/fileio2/src": {
+    "location": "/home/brian/Programming/CPS261/fileio2/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brian/Programming/CPS261/fileio2/src\u0027. Skipped."
+  },
+  "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.3.0.fc19.x86_64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.3.0.fc19.x86_64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/brundel/Programming/CPS261/miniArrayList/src": {
+    "location": "/home/brundel/Programming/CPS261/miniArrayList/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brundel/Programming/CPS261/miniArrayList/src\u0027. Skipped."
+  },
+  "/home/brundel/Programming/CPS261/miniArray/src": {
+    "location": "/home/brundel/Programming/CPS261/miniArray/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brundel/Programming/CPS261/miniArray/src\u0027. Skipped."
+  },
+  "/home/brundel/Programming/CPS261/miniList/src": {
+    "location": "/home/brundel/Programming/CPS261/miniList/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brundel/Programming/CPS261/miniList/src\u0027. Skipped."
+  },
+  "/home/brundel/Programming/CPS261/myList/src": {
+    "location": "/home/brundel/Programming/CPS261/myList/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brundel/Programming/CPS261/myList/src\u0027. Skipped."
+  },
+  "/home/brundel/Programming/CPS261/NetworkedPrograms/src": {
+    "location": "/home/brundel/Programming/CPS261/NetworkedPrograms/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/brundel/Programming/CPS261/NetworkedPrograms/src\u0027. Skipped."
+  }
+}

@@ -1,0 +1,55 @@
+/*
+ * phoneNumber.h
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: brian
+ */
+
+#ifndef PHONENUMBER_H_
+#define PHONENUMBER_H_
+#include <string>
+#include <iostream>
+using namespace std;
+class phoneNumber {
+
+	friend istream& operator>>(istream&, phoneNumber&);
+	friend ostream& operator<<(ostream& , const phoneNumber&);
+public:
+
+
+private:
+	bool checkLenght(char a[]);
+	bool checkExchange(char[]);
+	bool checkArea(char[]);
+	bool checkparenthesis(char[]);
+	string areaCode;
+	string exchange;
+	string lineNum;
+
+};
+bool phoneNumber::checkLenght(char a[]){
+	int i = 0;
+	for (i; a[i]!= NULL; )
+			++i;
+	return (i == 13);
+}
+bool phoneNumber::checkparenthesis(char a[]){
+
+    if(a[0] == '(' && a[2] == ')')
+	return true;
+    return false;
+}
+
+bool phoneNumber::checkArea(char a[]){
+	if(a[1]-'0' > 1 && a[2]-'0' <= 1)
+		return true;
+}
+istream& operator>>(istream& is, phoneNumber& obj){
+	char name[14];
+	cin.getline(name,13);
+
+
+	return is;
+}
+
+#endif /* PHONENUMBER_H_ */

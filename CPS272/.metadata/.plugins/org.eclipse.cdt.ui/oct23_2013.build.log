@@ -1,0 +1,15 @@
+15:16:31 **** Incremental Build of configuration Debug for project oct23_2013 ****
+make all 
+Building file: ../oct23.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"oct23.d" -MT"oct23.d" -o "oct23.o" "../oct23.cpp"
+Finished building: ../oct23.cpp
+ 
+Building target: oct23_2013
+Invoking: Cross G++ Linker
+g++  -o "oct23_2013"  ./oct23.o   
+Finished building target: oct23_2013
+ 
+
+15:16:31 Build Finished (took 470ms)
+

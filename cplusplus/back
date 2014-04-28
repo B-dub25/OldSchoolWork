@@ -1,0 +1,79 @@
+template<class T, class T2>
+class base {
+public:
+	 base & operator[](int n);
+	 const base& operator[](int) const;
+	 bool operator!=(const base& obj) const {return(*this == obj);}
+	 bool operator==(const base& obj) const {return(*this == obj);}
+	 virtual void sort(T, T2);
+     virtual string what() const = 0;
+     virtual ~base();
+     base(base&);
+     base();
+private:
+      T* array;
+      T2** array2;
+protected:
+      int length;
+};
+template<class T, class T2>
+base<T,T2>::base(){
+	T<string>* array = new T[7];
+	T2<int>** array2  = new int*[7];
+	for (int i = 0; i < 4; ++i) {
+		array2 = new int[4];
+	}
+	length = 0;
+}
+template<class T, class T2>
+base<T, T2>::base(base& obj){
+
+}
+template<class T, class T2>
+void base<T, T2>::sort(T array ,T2 array2){
+	    T temp;
+	    T2 temp2;
+	    int largest = 0; int row = 0;
+	    for(int i = 0; i < 7; ++i)
+	    {
+	    	for(int x = 0; x < 3; x++){
+	    	for(int j = 1+x; j < 3; ++j) {
+				if(array2[i][x] < array2[i][j])
+					{largest = j; row = x;}
+			}
+
+	    temp = array[i];
+	    temp2 = array2[i][x];
+	    array[i] = array[largest];
+	    array[i][i] = array2[i][largest];
+	    array[largest] = temp;
+	    array2[largest][i] = temp2;
+	       }
+	    }
+}
+
+
+#include "base.h"
+#include <iostream>
+using namespace std;
+
+class election : public base{
+    
+	friend ostream& operator<<(ostream& , const election&);
+	friend istream& operator>>(istream&, election&);
+	friend ifstream& operator>>(ifstream& , election&);
+	friend ofstream& operator<<(ofstream&, const election&);
+
+public:
+	election& operator[](int);
+	const election& operator[](int) const;
+	bool operator!=(const election& obj) const {return(*this == obj);}
+	bool operator==(const election& obj) const {return(*this == obj);}
+	
+	
+private:
+};
+
+
+
+

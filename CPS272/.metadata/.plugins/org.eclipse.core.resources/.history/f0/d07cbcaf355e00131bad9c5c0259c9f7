@@ -1,0 +1,63 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Dec 5, 2013
+ *      Author: brundel
+ */
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <map>
+#include <set>
+
+using namespace std;
+
+template<typename T>
+class freq
+{
+public:
+
+	freq(T v, T cnt = 1) : value(v), count(cnt) {}
+    T increment() { return count++ ; }
+    T getValue() const { return value; }
+    int getCount() const { return count; }
+friend bool operator < ( const freq& a, const freq& b){
+	return a.value < b.value ;
+}
+friend bool operator <= ( const freq& a, const freq& b){
+	return a.value <= b.value ;
+}
+private:
+		T value;
+		T count;
+};
+
+int main(){
+
+	ifstream col;
+	string name;
+	int dol;
+	multiset<char> k;
+	multiset<char>::iterator it;
+	string st = "mississippi";
+	for (int i = 0; i < st.length(); ++i) {
+		 k.insert(st[i]);
+	}
+  cout << k.size() << endl;
+	map<string,int> can;
+	//map<string, int>::iterator it;
+
+    /*col.open("collect.txt");
+    while(true){
+
+    	col >> name >> dol;
+    	if(!col)
+    		break;
+    	can[name] += dol;
+    }*/
+
+   for(it =k.begin(); it != k.end(); ++it)
+	   cout << (*it) << " "<< endl;
+}
+

@@ -1,0 +1,15 @@
+15:36:47 **** Incremental Build of configuration Debug for project mp3 ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: mp3
+Invoking: Cross G++ Linker
+g++  -o "mp3"  ./driver.o   
+Finished building target: mp3
+ 
+
+15:36:48 Build Finished (took 366ms)
+

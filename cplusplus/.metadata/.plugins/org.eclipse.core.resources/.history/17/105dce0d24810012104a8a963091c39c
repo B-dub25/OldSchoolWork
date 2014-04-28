@@ -1,0 +1,51 @@
+/*
+ * votes.h
+ *
+ *  Created on: Feb 26, 2013
+ *      Author: brian
+ */
+
+#ifndef VOTES_H_
+#define VOTES_H_
+
+#include <iostream>
+#include <iomanip>
+#include "base.h"
+
+using namespace std;
+
+class votes : public base{
+
+	    friend ostream& operator<<(ostream& , const votes&);
+	    friend istream& operator>>(istream& , votes&);
+
+public:
+
+	    virtual bool operator==(const votes& obj) {return this == &obj;}
+	    virtual bool operator!=(const votes& obj) {return this != &obj;}
+	    virtual bool operator> (const votes& obj) {return this > &obj; }
+	    virtual string what() const ;
+        ~votes() { delete [] the_votes;}
+
+        votes();
+	    votes(const votes&);
+        template<class T,class T2,int r,int c>
+        virtual void Swap(T&,T2&,int,int,int);
+private:
+	 int ** the_votes;
+	 int*   total;
+
+};
+template<class T,class T2,int c>
+void Swap(T& array,T2& array2,int r, int r2, int size){
+
+	T* temp = new T[size] ;
+
+	for(int i = 0; i < size; ++i)
+	     temp[i] = array[r][i];
+	for (int j = 0; j < size; ++j)
+		array[r][j] = array2[r2][j];
+	for(int i = 0; i < size; ++i)
+		array[r2][i] = temp[i];
+}
+#endif /* VOTES_H_ */

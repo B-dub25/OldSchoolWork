@@ -1,0 +1,14 @@
+<?php
+class Test{
+	
+	private $my;
+	public function __construct(){
+		$my = "Brian";
+	}
+	public function myfun(){
+		
+		print $my;
+		
+	}
+}
+?>

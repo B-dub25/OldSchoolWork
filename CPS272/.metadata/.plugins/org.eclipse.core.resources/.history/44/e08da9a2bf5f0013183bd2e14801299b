@@ -1,0 +1,28 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Nov 13, 2013
+ *      Author: brundel
+  have to have etx/hash_map
+  and _gnu_cxx:: to declare it
+ */
+
+#include <iostream>
+#include "miniList.h"
+#include <string>
+
+using namespace std;
+
+
+int main(){
+
+
+    miniList m(20);
+
+
+
+
+}
+
+
+

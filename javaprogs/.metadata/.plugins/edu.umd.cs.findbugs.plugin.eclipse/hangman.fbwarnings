@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1365303964104" analysisTimestamp="1365303963756" release="">
+  <Project projectName="hangman">
+    <Jar>/home/brian/javaprogs/hangman/bin</Jar>
+    <AuxClasspathEntry>/home/brian/javaprogs/hangman/bin</AuxClasspathEntry>
+    <SrcDir>/home/brian/javaprogs/hangman/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="hangman.Driver">
+      <SourceLine classname="hangman.Driver" sourcefile="Driver.java" sourcepath="hangman/Driver.java"/>
+    </Class>
+    <Method classname="hangman.Driver" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="hangman.Driver" start="12" end="21" startBytecode="0" endBytecode="170" sourcefile="Driver.java" sourcepath="hangman/Driver.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="hangman.Driver" start="13" end="13" startBytecode="10" endBytecode="10" sourcefile="Driver.java" sourcepath="hangman/Driver.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="hangman.Hangman">
+      <SourceLine classname="hangman.Hangman" sourcefile="Hangman.java" sourcepath="hangman/Hangman.java"/>
+    </Class>
+    <Method classname="hangman.Hangman" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="hangman.Hangman" start="8" end="9" startBytecode="0" endBytecode="59" sourcefile="Hangman.java" sourcepath="hangman/Hangman.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="hangman.Hangman" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="Hangman.java" sourcepath="hangman/Hangman.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 1 Apr 2013 22:34:41 -0400" total_classes="2" referenced_classes="16" total_bugs="2" total_size="68" num_packages="1" vm_version="23.7-b01" cpu_seconds="0.58" clock_seconds="0.35" peak_mbytes="309.98" alloc_mbytes="455.12" gc_seconds="0.01" priority_1="2">
+    <PackageStats package="hangman" total_bugs="2" total_types="2" total_size="68" priority_1="2">
+      <ClassStats class="hangman.Driver" sourceFile="Driver.java" interface="false" size="13" bugs="1" priority_1="1"/>
+      <ClassStats class="hangman.Hangman" sourceFile="Hangman.java" interface="false" size="55" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="85" invocations="369" avgMicrosecondsPerInvocation="231" maxMicrosecondsPerInvocation="2895" standardDeviationMircosecondsPerInvocation="377"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="39" invocations="2" avgMicrosecondsPerInvocation="19661" maxMicrosecondsPerInvocation="31104" standardDeviationMircosecondsPerInvocation="11443"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="370" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="145" standardDeviationMircosecondsPerInvocation="11"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="19" invocations="16" avgMicrosecondsPerInvocation="1187" maxMicrosecondsPerInvocation="5836" standardDeviationMircosecondsPerInvocation="1534"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="16" invocations="338" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="984" standardDeviationMircosecondsPerInvocation="99"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="15" invocations="79" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="8356" standardDeviationMircosecondsPerInvocation="925"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="11" invocations="16" avgMicrosecondsPerInvocation="708" maxMicrosecondsPerInvocation="10760" standardDeviationMircosecondsPerInvocation="2595"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1365303964104" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

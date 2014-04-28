@@ -1,0 +1,22 @@
+template<class T, class T2>
+void election<T,T2>::sort(){
+    T temp;
+    T2 temp2;
+    int largest = 0; int row = 0;
+    for(int i = 0; i < 7; ++i)
+    {
+    	for(int x = 0; x < 3; x++){
+    	for(int j = 1+x; j < 3; ++j) {
+			if(array2[i][x] < array2[i][j])
+				{largest = j; row = x;}
+		}
+
+    temp = array[i];
+    temp2 = array2[i][x];
+    array[i] = array[largest];
+    array[i][i] = array2[i][largest];
+    array[largest] = temp;
+    array2[largest][i] = temp2;
+       }
+    }
+}

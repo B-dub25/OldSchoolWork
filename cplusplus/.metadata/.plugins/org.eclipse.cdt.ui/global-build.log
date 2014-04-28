@@ -1,0 +1,36 @@
+17:10:30 **** Clean-only build of configuration Debug for project exception ****
+make clean 
+rm -rf  ./DateForm.o ./except.o  ./DateForm.d ./except.d  exception
+ 
+17:15:01 **** Incremental Build of configuration Debug for project phoneNumber ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:7:0:
+../phoneNumber.h: In member function ‘bool phoneNumber::checkLenght(char*)’:
+../phoneNumber.h:48:8: warning: statement has no effect [-Wunused-value]
+../phoneNumber.h:48:17: warning: NULL used in arithmetic [-Wpointer-arith]
+Finished building: ../driver.cpp
+ 
+Building target: phoneNumber
+Invoking: Cross G++ Linker
+g++  -o "phoneNumber"  ./driver.o   
+Finished building target: phoneNumber
+ 
+17:24:51 **** Incremental Build of configuration Debug for project phoneNumber ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+In file included from ../driver.cpp:7:0:
+../phoneNumber.h: In member function ‘bool phoneNumber::checkLenght(char*)’:
+../phoneNumber.h:48:8: warning: statement has no effect [-Wunused-value]
+../phoneNumber.h:48:17: warning: NULL used in arithmetic [-Wpointer-arith]
+Finished building: ../driver.cpp
+ 
+Building target: phoneNumber
+Invoking: Cross G++ Linker
+g++  -o "phoneNumber"  ./driver.o   
+Finished building target: phoneNumber
+ 

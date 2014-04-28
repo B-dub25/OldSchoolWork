@@ -1,0 +1,23 @@
+
+public class IndexRecord {
+
+	private String dataType;
+	private int index;
+	
+	
+	public IndexRecord() {
+
+		dataType = "";
+		index = -1;
+		
+		
+	}
+	
+	public void setDataType(String info, int position){
+		dataType = info;
+		index    = position;
+	}
+	
+	
+	
+}

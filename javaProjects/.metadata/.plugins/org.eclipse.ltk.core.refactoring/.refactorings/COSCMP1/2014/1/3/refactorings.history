@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;sSortedArray&apos; to &apos;SortedArray&apos;&#x0A;- Original project: &apos;COSCMP1&apos;&#x0A;- Original element: &apos;sSortedArray&apos;&#x0A;- Renamed element: &apos;SortedArray&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;sSortedArray&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{sSortedArray.java[sSortedArray" matchStrategy="1" name="SortedArray" qualified="false" references="true" similarDeclarations="false" stamp="1390075412861" textual="false" version="1.0"/>
+</session>

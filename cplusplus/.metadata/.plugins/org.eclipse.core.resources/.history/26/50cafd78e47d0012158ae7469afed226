@@ -1,0 +1,127 @@
+/*
+ * election.h
+ *
+ *  Created on: Feb 22, 2013
+ *      Author: Brian Rundel
+ */
+
+#ifndef ELECTION_H_
+#define ELECTION_H_
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+
+using namespace std;
+
+template <class T, class T2>
+class election {
+
+	friend ostream& operator<<(ostream&, const election &) const;
+	friend istream& operator>>(istream&, election&);
+	friend ifstream& operator>>(ifstream&, election&);
+	friend ofstream& operator <<(ofstream&, T&);
+
+public:
+	static const int MAX = 10;
+
+	T& operator[](int n) {return T[n];}
+	const T operator[](const int) const;
+	const T2& operator[](const int , const int) const;
+	T2& operator[](int , int);
+	bool operator ==(const T& obj) {return *this == obj;}const
+	bool operator>=(const T&) const;
+	bool operator!=(const T& obj) { return *this != obj;} const
+
+
+	void sort();
+	election();
+	virtual string what() { return "Wrong input clearing";}
+	virtual ~election() {delete [] array; delete [] array2;}
+
+protected:
+	T* array[];
+	T2** array2[][];
+};
+
+template<class T2>
+const T2& operator[](const int r, const int c) const{
+	return T2[r][c];
+}
+template<class T2>
+T2& operator[](int r, int c){
+	return T2[r][c];
+}
+template<class T>
+const T operator[](const int n) const{
+	return T[n];
+}
+template<class T, class T2>
+election<T,T2>::election(){
+	T* array<string> = new string[10];
+	T2** array2<int>   = new int*[7];
+	for(int i = 0; i < 7; i++)
+	array2[i] = new int[3];
+}
+ifstream& operator>>(ifstream& in, election<string, int> & obj){
+	int x = 0;
+	while(in){
+	 try {
+		in >> obj.array[x];
+		for (int i = 0; i < 3; i++){
+			in >> obj.array2[x][i];
+		}
+		x++;
+	 }catch (in){
+		in.clear();
+	    cout << obj.what();
+	    return -1;
+	  }
+	}
+	return in;
+}
+ostream& operator<<(ostream& os, const election<string, int>& obj) const{
+
+	for(int i = 0 ; i < 3; i++){
+			os << left << obj.array[i];
+		 for(int j = 0; j < 3; j++){
+			 os << right << setw(4) << obj.array2[i][j];
+		 }
+		 cout << endl;
+		}
+	return os;
+}
+
+istream& operator>>(istream& is, election<string,int>& obj ){
+
+	for(int i = 0 ; i < 10; i++){
+		is >> obj.array[i];
+	 for(int j = 0; j < 10; j++){
+		 is >> obj.array2[i][j];
+	 }
+	}
+	return is;
+}
+
+template<class T, class T2>
+void election<T,T2>::sort(){
+    T temp;
+    T2 temp2;
+    int largest = 0; int row = 0;
+    for(int i = 0; i < 7; ++i)
+    {
+    	for(int x = 0; x < 3; x++){
+    	for(int j = 1+x; j < 3; ++j) {
+			if(array2[i][x] < array2[i][j])
+				{largest = j; row = x;}
+		}
+
+    temp = array[i];
+    temp2 = array2[i][x];
+    array[i] = array[largest];
+    array[i][i] = array2[i][largest];
+    array[largest] = temp;
+    array2[largest][i] = temp2;
+       }
+    }
+}
+#endif /* ELECTION_H_ */

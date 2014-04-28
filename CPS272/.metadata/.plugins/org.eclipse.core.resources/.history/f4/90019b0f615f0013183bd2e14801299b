@@ -1,0 +1,45 @@
+/*
+ * hashing.h
+ *
+ *  Created on: Dec 6, 2013
+ *      Author: brundel
+ */
+
+#ifndef HASHING_H_
+#define HASHING_H_
+
+#include "miniList.h"
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+template<typename K,typename T>
+class hashing {
+public:
+      node<T>* find(K);
+      node<T>* operator[](K key){
+    	  return list[hash(key)];
+      }
+
+private:
+       int hash(K);
+       miniList<K,T>* list[];
+};
+template<typename K, typename T>
+int hashing<K,T>::hash(K key){
+
+	int prime = 7;
+    string changer = key;
+    int hash = 0;
+
+    for(int i = 0 ; i < changer.length()-1;++i){
+    	hash += (changer[i] - '0') * pow(i,i) * prime;
+    }
+    return hash % 10;
+
+}
+
+
+
+#endif /* HASHING_H_ */

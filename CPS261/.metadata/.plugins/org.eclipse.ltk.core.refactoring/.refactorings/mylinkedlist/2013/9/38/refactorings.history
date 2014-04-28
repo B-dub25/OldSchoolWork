@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;data&apos; in &apos;mylinkedlist.MyLinkedList.push_front(...)&apos; to &apos;info&apos;&#x0A;- Original project: &apos;mylinkedlist&apos;&#x0A;- Original element: &apos;mylinkedlist.MyLinkedList.push_front(G).data&apos;&#x0A;- Renamed element: &apos;data&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;data&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;mylinkedlist{MyLinkedList.java[MyLinkedList~push_front~QG;@data!515!520!517!520!QG;!0!true" name="info" references="true" stamp="1379293812126" version="1.0"/>
+</session>

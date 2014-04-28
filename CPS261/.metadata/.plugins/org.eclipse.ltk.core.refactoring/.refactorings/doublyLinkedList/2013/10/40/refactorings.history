@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;position&apos; in &apos;doublyLinkedList.List.add(...)&apos; to &apos;currentNode&apos;&#x0A;- Original project: &apos;doublyLinkedList&apos;&#x0A;- Original element: &apos;doublyLinkedList.List.add(G).position&apos;&#x0A;- Renamed element: &apos;position&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;position&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;doublyLinkedList{List.java[List~add~QG;@position!1076!1103!1084!1091!QNode\&lt;QG;&gt;;!0!false" name="currentNode" references="true" stamp="1380991680198" version="1.0"/>
+</session>

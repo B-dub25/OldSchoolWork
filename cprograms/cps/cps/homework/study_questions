@@ -1,0 +1,1024 @@
+Quiz 1
+True or False
+
+1.The CPU contains several components, including the control unit (CU) and arithmetic logic unit (ALU)
+
+2. When the computer is turned off, everything in secondary memory is lost.
+
+3. Information stored in main memory must be transferred to some other device for permanent storage.
+
+4. The operating system monitors the overall activity of the computer and provides services such as memory management, input/output activities, and storage management.
+
+5. Analog signals represent information with a sequence of 0s and 1s.
+
+6. Assembly language, COBOL, Pascal, C, C++, and Java are all high-level languages.
+
+7. To develop a program to solve a problem, you start by analyzing the problem.
+
+8. The ____ is the brain of the computer and the single most expensive piece of hardware in your personal computer.
+A. MM
+B. ROM
+C. RAM
+D. CPU
+E.None of these
+
+9. A step-by-step problem-solving process in which a solution is arrived at in a finite amount of time is called a(n) ____.
+A. algorithm
+B. linker
+C. analysis
+D. design
+E. None of these
+
+10. Dividing a problem into smaller subproblems is called ____ design.
+A. OOD
+B. Top-Down refinement
+C. Structured
+D. analog
+E. none of these
+
+11. The programming language C++ was designed by Bjarne Stroustrup at Bell Laboratories in the early ____.
+A. 1960's
+B. 1970's
+C. 1980's
+D. 1990's
+E. None of these
+
+12. I am taking this class because _______.
+all answers apply
+
+Quiz 2
+True/false
+1. The symbol '*' belongs to the char data type.
+
+2. The operands of the modulus operator can be decimal numbers, but the modulus operator works better with integers.
+
+3. The implicit conversion of a value from one data type to another is called type coercion.
+
+4. Suppose that alpha and beta are int variables. The statement alpha = beta++; is equivalent to the statement alpha = ++beta;
+
+5. Which of the following is a legal identifier?
+A. program!
+B. program_1
+C. 1program
+D. program 1
+E. None of these
+
+6. The value of the expression 33/10 is ____.
+A. 0.3
+B. 3
+C. 3.0
+D. 3.3
+E. None of these
+
+7. The value of the C++ expression 14 / 4 + 4.3 is ____.
+A. 7
+B. 7.3
+C. 7.8
+D. 8
+E. None of these
+
+8. Given  
+int     one; 
+double  two;
+bool   four;
+which of the following assignments are valid?
+(i)   one = 7 * 3 % 4; 
+(ii)  2.3 + 3.5 = two;
+(iii) four  = (2 <= 3);
+A. Only (i) is valid
+B. (i) and (ii) are
+C. (ii) and (iii)
+D. (i) and (iii)
+E. None of these
+
+9. Choose the output of the following C++ statement: cout << "Sunny " << '\n' << "Day " << endl;
+
+A. Sunny \nDay
+B. Sunny \nDay endl
+C. Sunny Day
+D. Sunny \n Day 
+E. None of these
+
+10. Suppose that sum and num are int variables and sum = 5 and num = 10. After the statement sum += num executes, ____.
+
+A. sum = 0
+B. sum = 5
+C. sum = 10
+D. sum = 15
+E. None of these
+
+Quiz 3
+True / False
+1. The following statements will result in input failure if the input values are not on a separate line.
+(Assume that x and y are int variables.)
+cin >> x;
+cin >> y;
+
+2. During program execution, when entering character data such as letters, you need to enter the single quotes around the character.
+
+3. The cin() function does not skip blanks, but skips the new line character.
+
+4. You can use the cin() function to read an entire string at once, even if it contains blanks.
+
+5. Suppose that x is an int variable, y is a double variable and ch is a char variable and the input is:
+15A 73.2 Choose the values after the following statement executes:   cin >> x >> ch >> y;
+
+A. x = 15;ch = 'A';y = 73.2  
+B. x = 15; ch = 'A'; y = 73.0
+C. x = 15; ch = 'a'; y = 73.0
+D. Results in error
+E. None of these
+
+6. Suppose that x is an int variable, ch is a char variable, and the input is: 
+276. Choose the values after the following statement executes: 
+cin >> ch >> x;
+A. ch = '2', x = 276
+B. ch = '2', x = 76
+C. ch = ' ', x = 276
+D. ch = 'b', x = 76
+E. None of these
+
+7. Suppose that ch1, ch2, and ch3 are variables of the type char and the input is:
+A B
+C
+Choose the value of ch3 after the following statement executes: 
+cin >> ch1 >> ch2 >> ch3;
+
+A. 'A'
+B. 'B'
+C. 'C'
+D. '\n'
+E. Waiting for input
+F. None of these
+
+8. Suppose that ch1, ch2, and ch3 are variables of the type char and the input is:
+A B
+C
+What is the value of ch3 after the following statements execute?
+cin.get(ch1);
+cin.get(ch2);
+cin.get(ch3);
+
+A. 'A'
+B. 'B'
+C. 'C'
+D. '\n'
+E. Waiting for input
+F. None of these
+
+9. Suppose that alpha, beta, and gamma are int variables and the input is:
+100 110 120
+200 210 220
+300 310 320
+What is the value of gamma after the following statements execute?
+cin >> alpha;
+cin.ignore(100, '\n');
+cin >> beta;
+cin.ignore(100,'\n');
+cin >> gamma;
+
+A. 100
+B. 200
+C. 300
+D. 320
+E. None of these
+
+10. Suppose that x = 1565.683, y = 85.78, and z = 123.986. What is the output of the following statements? cout << fixed << showpoint; cout << setprecision(3) << x << ' '; cout << setprecision(4) << y << ' ' << setprecision(2) << z << endl;
+
+A. 1565.683 85.8000 123.98
+B. 1565.680 85.8000 123.99
+C. 1565.683 85.7800 123.99
+D. 1565.683 85.780 123.986
+E. None of these
+
+True/False
+11. Once an input stream goes into error state, the only way to recover is to restart the program.
+
+12. The following line is an effective way to read input from a file.  
+Assume that "average" is of type double, In_file of type ifstream and that input.txt contains floating point data.  
+In_file.open("input.txt");
+getline(In_File, average);
+
+Quiz 4
+True/False 
+1. In C++, the logical operator "and" is &&.
+
+2. In C++, all relational operators are evaluated before logical operators.
+
+3. The operators != and == have the same order of precedence.
+
+4. The expression
+   'A' < ch < 'F'
+   is equivalent to the expression
+   'A' < ch && ch < 'F'
+
+5. Suppose that x is an int variable. Which of the following expressions always evaluates to true?
+
+6. Suppose x and y are int variables. Consider the following statements.
+if (x > 5)
+    y = 1;
+else if (x < 5)
+{   if (x < 3)
+        y = 2;
+    else
+        y = 3;}
+else
+    y = 4;
+What is the value of y if x = 6?
+A. 1
+B. 2
+C. 3
+D. 4
+E. None of these
+
+7. What is the output of the following code?
+if ( 6 > 8)
+{   cout << " ** " << endl;
+    cout << "****" << endl;}
+else if (9 == 4)
+    cout << "***" << endl;
+else
+    cout << "*" << endl;
+A. *
+B. **
+C. ***
+D. ****
+E. None of these
+
+8. Suppose x and y are int variables. Consider the following statements..
+if (x >= 3)
+    y = 1;
+if (x < 3)
+    y = 2;
+Which statement is NOT equivalent to this code?
+A. if(x>=3)
+    y = 1;
+   else 
+   y = 2;
+B. y = (x>=3)?1:2;
+C.if (x>3 || x == 3)
+  y = 1;
+  else if (x< 3)
+  y = 2;
+D. y =(x>=3)?2:1;
+E. All are equivalent
+
+9. What is the output of the following code?
+char lastInitial = 'C';
+switch (lastInitial)
+{ case 'A': cout << "section 1" <<endl;
+  case 'B': cout << "section 2" <<endl;
+  case 'C': cout << "section 3" <<endl;
+  case 'D': cout << "section 4" <<endl;
+  default:  cout << "section 5" <<endl;
+}
+
+A. section 2
+B. section 3
+C. section 4
+D. section 5
+E. None of these
+
+10.What is the output of the following code fragment if the input value is 4?
+int num;
+int alpha = 10;
+cin >> num;
+switch (num)
+{  case 3: alpha++;
+           break;
+   case 4: 
+   case 6: alpha = alpha + 3;
+   case 8: alpha = alpha + 4;
+           break;
+   default:alpha = alpha + 5;
+} 
+cout << alpha;
+
+A. 13
+B. 14
+C. 17
+D. 20
+E. None of these
+
+Quiz 5
+True/ False
+
+1. If the while expression becomes false in the middle of the while loop body, the loop terminates immediately.
+
+2. Loop control variables are automatically updated in a loop.
+
+3. Assume all variables are properly declared and the input is 4 3 2 6 -1.The output of the following C++ code is 10.
+
+sum = 0;
+cin >> num;
+while (num != -1)
+{
+    cin >> num;
+    sum = sum + num;
+}
+cout << sum << endl;
+
+4. Assume all variables are properly declared. The following for loop executes 25 times.
+
+for (i = 0; i <= 50; i = i + 2)
+    cout << i;
+5. It is possible that the body of a while loop may not execute at all, but the body of a for loop executes at least once.
+
+6. What is the output of the following program segment?
+int x = 14;   
+int y = 60;
+
+while (((y - x) % 3) != 0)
+{
+    cout << y << " ";
+    y = y - 5;
+}
+A. 60 55
+B. 60 55 50
+C. 60 55 50 45
+D. 60 55 50 45 40
+E. None of these
+
+7. Suppose sum and num are int variables, and the input is 18 25 61 6 -1. What is the output of the following code?
+
+sum = 0;
+cin >> num;
+while (num != -1)
+{
+    sum = sum + num;
+    cin >> num;
+}
+cout << sum << endl;
+A. 92
+B. 109
+C. 110
+D. 119
+E. None of these
+
+8. Consider the following for loop.
+
+int i;
+
+for (i = 1; i < 20; i++)
+    cout << "Hello World";
+cout << endl;
+
+How many times will Hello World be printed by this for loop?
+A. 1
+B. 18
+C. 19
+D. 20
+E. None of these
+
+9. What is the output of the following C++ code?
+
+int j;
+for (j = 10; j <= 10; j++)
+    cout << j << " ";
+cout << j << endl;
+A. 10
+B. 10 10
+C. 10 11
+D. 11 11
+E. None of these
+
+10. What is the value of x after the following statements execute?
+
+int x = 5;
+int y = 30;
+
+do
+    x = x * 22;
+while (x < y);
+A. 5
+B. 10
+C. 20
+D. 40
+E. None of these
+
+Quiz 6.
+
+1. A function definition consists of the function heading and the body of the function.
+
+2. The following function heading in a C++ program is valid: 
+int funcExp(int u, char v, float g)
+
+3. The return statement return x + 1; first returns the value of x and then increments the value of x.
+
+4. It is not necessary to specify the names of formal parameters in a function prototype.
+
+5. A value-returning function can return two values via the return statement.
+
+6. Given the following function prototype: int test(float, char); which of the following statements is valid?
+A. cout << test(12,&)
+B. cout << test("12.0",'&')
+C. int u = test(5.0,'*')
+D. cout << test('12','&')
+E. None of these
+
+7.Given the following function
+int strange(int x, int y)
+{
+    if (x > y)
+        return x + y;
+    else
+        return x - y;
+}
+what is the output of the following statement:?
+cout << strange(4, 5) << endl;
+A. -1
+B. 1
+C. 9
+D. 20
+E. None of these
+
+8.Given the following function prototype: 
+double tryMe(double, double); 
+which of the following statements is valid? Assume that all variables are properly declared.
+A. cin >> tryMe(x,y);
+B. cout << tryMe(2.0,3.0);
+C. cout << tryMe(tryMe(double,double),double);
+D. cout << tryMe(tryMe(float,float),float);
+D. None of these.
+
+9. Which of the following function prototypes is valid?
+A. int funcExp(int x, float v);
+B. funcExp(int x float v){};
+C. funcExp(void);
+D. int funcExp(void);
+E. None of these.
+
+10. Given the following function
+int mystery(int u, int v)
+{
+    int a;
+
+    a = u - v;
+    u = a;
+    v = u;
+
+    return u + v;
+}
+choose the output of the following statement: 
+cout << mystery(9, 7) << endl;
+A. 2
+B. 4
+C. 7
+D. 9
+E. None of these.
+
+Quiz 7.
+True False
+
+1. It is legal to use a return statement without any value in a user-defined void function.
+
+2. Whenever the value of a reference parameter changes, the value of the actual parameter changes.
+
+3. Problems caused by global variables in one area of a program can be misunderstood as problems caused in another area.
+
+4. The memory for a static variable remains allocated during program execution.
+
+5. Suppose that printHeading is a function without any parameters. Which of the following is a valid function heading?
+
+A. void printHeading();
+B. void printHeading()
+C. void printHeading(noParameters);
+D. void printHeading(void)
+E. None of these
+
+6. Consider the following definition.
+
+void funBbeta(int& one, double two)
+{
+    ...
+}
+
+Based on this function definition, which of the following statements is valid?
+
+A. one is a value parameter and two is a reference parameter.
+B. one is a reference parameter and two is a value parameter.
+C. one and two are reference parameters.
+D. one and two are value parameters.
+E. None of these
+
+7. Suppose that you are given the following function definition:
+
+void printSomeThing(int x)
+{
+    for (int i = 1; i <= x, i++)
+        cout << "* ";
+    cout << endl;
+}
+
+What is the output of the following statements?
+
+printSomeThing(1);
+printSomeThing(2);
+printSomeThing(3);
+
+A. *****
+B. *,**,***
+C. *,**,***
+D. *,**,***,****
+E. None of these
+
+8. You can declare a(n) ____ parameter as a constant by using the keyword const.
+
+A. absolute
+B. relative
+C. refernece
+D. actual
+E. None of these
+
+9. What is the output of the following program?
+
+#include <iostream>
+using namespace std;
+
+void one(int x, int& y);
+void two(int& s, int t);
+
+int main()
+{
+    int u = 1;
+    int v = 2;
+
+    one(u, v); 
+    cout << u << " " << v << endl;
+    two(u, v);
+    cout << u << " " << v << endl;
+
+    return 0;
+}
+
+void one(int x, int& y)
+{
+    int a;
+		
+    a = x;
+    x = y;
+    y = a;
+}
+
+void two(int& s, int t)
+{
+    int b;
+
+    b = s - t;
+    s = t + b + 2;
+    t = 4 * b;
+}
+
+A. 1 1,3 1
+B. 1 2,1 3
+C. 1 2,2 3
+D. 2 2,2 3
+E. None of these
+
+10. ____ identifiers are not accessible outside of the function (block).
+
+A. Local
+B. Global
+C. Internal
+D. External
+E. None of these
+
+11. What is the output of the following C++ code?
+
+int alpha = 5;
+int beta = 10;
+
+alpha = alpha + 5;
+{
+    int alpha = 20;
+    beta = beta + 5;
+}
+
+cout << alpha << " " << beta << endl;
+
+A. 10,10
+B. 20,15
+C. 10,15
+D. 15,10
+E. None of these
+
+
+Exam 1.
+True/ False
+
+1. The CPU contains several components, including the control unit (CU) and arithmetic logic unit (ALU).
+
+2. The machine language of one machine is the same as the machine language of another machine.
+
+3. Assembly, COBOL, Pascal, C, C++, and Java are all high-level languages.
+
+4. The compiler guarantees that a program will run correctly.
+
+5. A reserved word can be used as a variable name.
+
+6. The data type double is a floating-point data type.
+
+7. The value of the expression 8 * 5 % 3 is 16
+
+8. In a mixed expression, all integer operands are converted to floating-point numbers with zero decimal part.
+
+9. Suppose x = 15.7. The output of the statement
+cout << static_cast<int>(x) / 2 << endl; 
+is 7
+
+10. Suppose that alpha and beta are int variables. The statement alpha = beta++; is equivalent to the statement alpha = beta + 1;.
+
+11. The following statements are equivalent.
+x *= y + 2;
+x = x * y + 2;
+
+12. In the statement cin >> x;, x can be a variable or an expression.
+
+13. The statement cout << num; is equivalent to the statement num << cout;
+
+14. The extraction operator >> skips only all leading blanks when searching for the next data in the input stream.
+
+15. Entering an int value into a char variable causes serious errors, called input failure.
+
+16. The get function does not skip blanks, but skips the new line character.
+
+17. To use the manipulators setprecison and setw, the program must include the header file iomanip.
+
+18. Suppose that first and last are variables of type string and the input is
+Donald Ducky
+The following statement stores Donald in first and Ducky in last:
+cin >> first >> ' ' >> last;
+
+19. For file input/output in a program, the program must include the header file iofstream.
+
+20. A control structure alters the normal sequential flow of control in a program.
+
+21. In C++, both ! and != are relational operators.
+
+22. The expression !(x < 0) is true only if x is a positive number.
+
+23. Suppose P and Q are logical expressions. The logical expression P && Q is true if both P and Q are true.
+
+24. The value of the expression 6 < 5 || 'g' > 'a' && 7 < 4 is true.
+
+25. The expression 'A' < ch < 'Z' is equivalent to the expression 'A' < ch && ch < 'Z'
+
+26. The output of the following code is 10.
+num = 5;
+if (num >= 5)
+    cout << num <<endl;
+else
+    cout << num + 5 << endl;
+
+27. The following blocks of C++ code are equivalent. (Assume that score is an int variable and grade is a char variable.)
+(i)
+      if (score >= 90)
+         grade = 'A';
+      if (score >= 80 && score < 90)
+         grade = 'B';
+(ii)
+      if (score >= 90)
+         grade = 'A';
+      else if (score >= 80)
+         grade = 'B';
+28. A sequence of eight bits is called a ____.
+A. binary digit
+B. byte
+C. character
+D. double
+E. None of these
+
+29.The term TB refers to?
+A. Turning byte
+B. tight byte
+C. Terabyte
+D. Tunix Beetle
+E. None of these
+
+30. A program called a(n) ____ translates instructions written in high-level languages into machine code.
+A. assembler
+B. decoder
+C. compiler
+D. linker
+E. None of these
+
+31. Consider the following C++ program.
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Hello World "
+    return 0;
+}
+In the cout statement, the missing semicolon in the code above will be caught by the ____.
+
+A. compiler
+B. editor
+C. assembler
+D. control unit
+E. None of these
+
+32. The programming language C++ was designed by Bjarne Stroustrup at Bell Laboratories in the early ____.
+
+A. 1960's
+B. 1970's 
+C. 1980's
+D. 1990's
+E. None of these
+
+33. All of the following are examples of integral data types EXCEPT ____.
+A. int
+B. char
+C. double
+D. short
+E. None of these
+
+34. Suppose that x, y, z, and w are int variables. The expression x(y+z)/w in C++ is written as
+A. x*y+z/w
+B. x*y+x*z/w
+C. x*(y+z)/w
+D. x(y+z)/w
+E. None of these
+
+35.The value of the expression 17 % 7 is ____.
+A. 1
+B. 2
+C. 3
+D. 4
+E. None of these
+
+36. The value of the expression 26 + 14 / 3 + 1 is ____.
+A. 10
+B. 14
+C. 29
+D. 31
+E. None of these
+
+38. Suppose that alpha is a double variable. Choose the value of alpha after the following statement executes: 
+alpha = 12.5 + static_cast<double>(13) / 2;
+A. alpha = 18.0
+B. alpha = 18.5
+C. alpha 19.0
+D. alpha = 19.5
+E. None of these
+
+39. Which of the following statements about a named constant is NOT true?
+A. Its content cannot change during program execution
+B. Its value can be changed during program execution
+C. It is a memory location
+D. It is declared using the reserved word const
+E. None of these
+
+40.Suppose that alpha and beta are int variables. The statement alpha = --beta; is equivalent to the statement(s) ____.
+A. alpha =1 - beta;
+B. alpha = beta - 1;
+C. beta = beta - 1; alpha = beta;
+D. alpha = beta; beta = beta - 1;
+E. None of these
+
+41. Suppose that x = 5 and y = 6. Choose the output of the following C++ statement: 
+cout << "Sum of " << x << " and " << y << " = " << x + y << endl;.
+A. Sum 0f 5 and 6 = 11
+B. Sum of x and y = 11
+C. Sum of x and y = x + y
+D. Sum of 5 and 6 = x+y
+
+42.The declaration int a, b, c; is equivalent to which of the following?
+A. inta,b,c;
+B. int a,b,c;
+C. int abc;
+D. int a b c;
+E. None of these
+
+43. Suppose that alpha and beta are int variables and alpha = 5 and beta = 10. After the statement alpha *= beta; executes ____.
+A. alpha = 5
+B. alpha = 10
+C. alpha = 50
+D. alpha = 50.0
+E. None of these
+
+44. Suppose that x is an int variable, y is a double variable and ch is a char variable and the input is: 
+15A 73.2
+Choose the values after the following statement executes: 
+cin >> x >> ch >> y;
+A. x = 15,ch='A',y=73.2
+B. x = 15,ch ='A',y=73.0
+C. x = 15,ch='a',y=73.0
+D. x =1,ch='5',y='A'
+E. None of these
+
+45. Suppose that x is an int variable, y is a double variable, z is an int variable, and the input is: 
+15 76.3 14 
+Choose the values after the following statement executes: 
+cin >> x >> y >> z;
+A. x=15,y=76,z=14
+B. x=15,y=76,z=0
+C. x=15,y=76.3,z=14
+D. x=15.0,y=76.3,14.0
+E. None of these
+
+46. Suppose that ch1, ch2, and ch3 are variables of the type char and the input is:
+A B
+C
+Choose the value of ch3 after the following statement executes: 
+cin >> ch1 >> ch2 >> ch3;
+A. 'A'
+B. 'B'
+C. 'C'
+D. '\n'
+E. None of these
+
+47. Suppose that ch1 and ch2 are char variables, alpha is an int variable, and the input is: 
+A 18 
+What are the values after the following statement executes?
+cin.get(ch1);
+cin.get(ch2);
+cin >> alpha;
+A. ch1 = 'A', ch2 = ' ', alpha = 18
+B. ch1 = 'A', ch2 = '1', alpha = 8
+C. ch1 = 'A', ch2 = ' ', alpha = 1
+D. ch1 = 'A', ch2 = '\n', alpha = 1
+E. None of these
+
+48. Suppose that ch1, ch2, and ch3 are variables of the type char and the input is:
+A B
+C
+What is the value of ch3 after the following statements execute?
+cin.get(ch1);
+cin.get(ch2);
+cin.get(ch3);
+A. 'A'
+B. 'B'
+C. 'C'
+D. '\n'
+E. None of these
+
+49. Suppose that ch1 and ch2 are char variables and the input is: 
+WXYZ
+What is the value of ch2 after the following statements execute?
+cin.get(ch1);
+cin.putback(ch1);
+cin >> ch2;
+A. W
+B. X
+C. Y
+D. Z
+E. None of these
+
+50. Suppose that x = 25.67, y = 356.876, and z = 7623.9674. What is the output of the following statements?
+cout << fixed << showpoint;
+cout << setprecision(2);
+cout << x << ' ' << y << ' ' << z << endl;
+A. 25.67 356.87 7623.96
+B. 25.67 356.87 7623.97
+C. 25.67 356.88 7623.97
+D. 25.67 356.876 7623.967
+E. None of these
+
+51. What is the output of the following statements?
+cout << "123456789012345678901234567890" << endl;
+cout << setfill('#') << setw(10) << "Mickey"
+     << setfill(' ') << setw(10) << "Donald"
+     << setfill('*') << setw(10) << "Goofy" << endl;
+A. ####Mickey Donald*****Goofy //assume 4 blanks between Mickey and Donald
+B. ####Mickey####Donald*****Goofy
+C. ####Mickey####Donald#####Goofy
+D. ****Mickey####Donald#####Goofy
+E. None of these
+
+52. Consider the following program segment. 
+ifstream infile;      //Line 1
+int x, y;          //Line 2
+...              //Line 3
+infile >> x >> y;      //Line 4
+
+Which of the following statements at Line 3 can be used to open the file progdata.dat and input data from this file into x and y at Line 4?
+A. infile.open("progdata.dat");
+B. infile(open,"progdata.dat");
+C. open.infile("progdata.dat");
+D. open(infile,"progdata.dat");
+E. None of these
+
+53. Which of the following is a relational operator?
+A. =
+B. ==
+C. !
+D. &&
+E. None of these
+
+54. What is the output of the following C++ code?
+x = 0;
+if (x < 0)
+    cout << "One ";
+    cout << "Two ";
+cout << "Three";
+A. One Two
+B. Two
+C. Two Three
+D. One Two Three
+E. None of these
+
+55. What is the output of the following code fragment? 
+x = 10;
+if (x > 15)
+    x = 0;
+    cout << x << endl;
+else
+    cout << x + 5;
+A. 0
+B. 5
+C. 10
+D. 510
+E. None of these
+
+56. Suppose x and y are int variables. Consider the following statements.
+if (x > 5)
+    y = 1;
+else if (x < 5)
+{
+    if (x < 3)
+        y = 2;
+    else
+        y = 3;
+}
+else
+    y = 4;
+What is the value of y if x = 5?
+A. 1
+B. 2
+C. 3
+D. 4
+E. None of these
+
+57. Suppose x and y are int variables. Consider the following statements..
+if (x > 3)
+    y = 1;
+if (x == 3)
+    y = 1;
+if (x < 3)
+    y = 2;
+Which statement is NOT equivalent to this code?
+A. if (x >= 3) 
+y = 1; 
+else 
+y = 2;
+
+B. y = (x >= 3) ? 1 : 2;
+
+C. if (x > 3 || x == 3) 
+y = 1; 
+else if (x < 3) 
+y = 2;
+
+D. y = (x >= 3) ? 2 : 1;
+E. None of these
+
+60.What is source code?
+
+61.What is object code?
+
+62.What is the relationship between source code and object code?
+
+63.Which is more portable, source code or object code?
+
+64.What is the EXACT output of the following sequence of statements?
+Show blanks and indicate blank lines explicitly.
+int x, y, z, w;
+
+x = 9;
+z = 5;
+y = x + z;
+cout << "x = " << x << " y = " << y << endl;
+
+z = 2 * y - 5;
+w = 3 * (z - y) - x ;
+cout << "z = " << z << " w = " << w << endl << endl;
+
+y = y + 3;
+x = x - 2;
+cout  << "x = "  <<  x  <<  '\n'  <<  "y = "  
+    <<  y  <<  endl;
+
+70.Write a code segment to report which value of three integer values is the largest.  
+Assume a, b, and c have been declared and hold different valid values.  
+Try to make your code efficient. I only want the largest value, not all three in some order.
+
+71. Copy and Modify the following code so that the output will always be formatted as shown.  
+Do not use sequences of '.' or ' '.  
+The positions of the first digit of the height, the dollar sign, and both decimal points are important.  
+Assume height and income are doubles. 
+You do not have to print out the number line.(12345678901234567890...)  
+
+cout << name_str  << height << income;
+
+12345678901234567890123456789012345678901234567890
+John Paul Jones...............175.2     $ 1792.34
+
+71.Write a program that will read in three values and a name string (in that order) from a file and report the average of the values to the screen.  
+Assume the values are on the first line and the name is on the second line of the file.  The name may be multiple words.  
+The values being read in are integers.  However, the average should be displayed to one decimal place.  
+The output should look something like this:
+I. M. Bushed had values of 120, 100 and 80 for an average of 100.0.
+You may omit comments explaining the steps in the program.
+
+

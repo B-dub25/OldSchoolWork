@@ -1,0 +1,23 @@
+/*
+ * driver.cpp
+ *
+ *  Created on: Nov 13, 2013
+ *      Author: brundel
+ */
+
+#include <iostream>
+#include <hash_map>
+#include <hashtable.h>
+#include <string>
+#include <map>
+using namespace std;
+
+int main(){
+
+	hashmap<string , int> mymap;
+
+
+}
+
+
+

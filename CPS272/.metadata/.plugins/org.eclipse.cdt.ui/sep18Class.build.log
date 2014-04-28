@@ -1,0 +1,15 @@
+18:37:19 **** Incremental Build of configuration Debug for project sep18Class ****
+make all 
+Building file: ../driver.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"driver.d" -MT"driver.d" -o "driver.o" "../driver.cpp"
+Finished building: ../driver.cpp
+ 
+Building target: sep18Class
+Invoking: Cross G++ Linker
+g++  -o "sep18Class"  ./driver.o   
+Finished building target: sep18Class
+ 
+
+18:37:20 Build Finished (took 316ms)
+

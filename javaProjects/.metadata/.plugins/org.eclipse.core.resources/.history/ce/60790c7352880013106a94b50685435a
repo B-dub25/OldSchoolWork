@@ -1,0 +1,33 @@
+
+public class DataStructure {
+
+
+
+
+	
+	
+	
+private class DataStructureRecord{
+		
+	private	String id;
+	private	String lastName;
+	private	String firstName;
+	
+	private DataStructureRecord(){
+		
+		id = "";
+		lastName = "";
+		firstName = "";
+	}
+		
+    private void insert(String fName, String lName, String studentID){
+    	
+    	firstName = fName;
+    	lastName  = lName;
+    	id        = studentID;	
+    }
+    
+}
+
+
+}

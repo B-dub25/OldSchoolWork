@@ -1,0 +1,38 @@
+/*
+ * phoneNumber.h
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: brian
+ */
+
+#ifndef PHONENUMBER_H_
+#define PHONENUMBER_H_
+#include <string>
+#include <iostream>
+using namespace std;
+class phoneNumber {
+
+	friend istream& operator>>(istream&, phoneNumber&);
+	friend ostream& operator<<(ostream& , const phoneNumber&);
+public:
+	 bool checkArea(char[]);
+
+
+private:
+	string areaCode;
+	string exchange;
+	string lineNum;
+
+};
+bool phoneNumber::checkArea(char a[]){
+
+
+	return true;
+}
+istream& operator>>(istream& is, phoneNumber& obj){
+	char name[14];
+
+	return is;
+}
+
+#endif /* PHONENUMBER_H_ */

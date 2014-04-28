@@ -1,0 +1,16 @@
+
+@SuppressWarnings("rawtypes")
+public class Inventory implements Comparable{
+
+	Integer inventoryId;
+	public Inventory() {
+		inventoryId = 0;
+	}
+	public int compareTo(Comparable id){
+		Inventory otherInventory = (Inventory)id;
+		if(id < inventoryId)
+			return -1;
+	}
+	
+	
+}

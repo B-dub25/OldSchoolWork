@@ -1,0 +1,35 @@
+/*
+ * base.cpp
+ *
+ *  Created on: Feb 26, 2013
+ *      Author: brian
+ */
+#include "base.h"
+int base::counter = 0;
+
+base::base(){
+	names = new string[MAX];
+}
+
+base::base(const base& obj){
+
+	if(*this != obj){
+		delete [] names;
+		for (int r = 0; r < counter; ++r)
+			names[r] = obj.names[r];
+	}
+}
+void base::Getnames(istream& is){
+
+	  is >> names[counter];
+	  counter++;
+}
+istream& operator>>(istream& is, base& obj){
+
+	 int x = 0;
+	 while(is && x < obj.MAX){
+		   is >> obj[x];
+		   is.ignore(100,'\n');
+	 }
+	 return is;
+}

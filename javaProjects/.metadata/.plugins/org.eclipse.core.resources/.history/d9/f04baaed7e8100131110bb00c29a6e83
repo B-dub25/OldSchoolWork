@@ -1,0 +1,26 @@
+import java.util.Arrays;
+
+
+public class DataStructorRecord {
+
+	private SortedArray<String> identification;
+	private SortedArray<String> firstName;
+	private SortedArray<String> lastName;
+	private DataBaseRecord[]     records;
+	private static final int     MAX = 100;
+	
+	
+	public DataStructorRecord() {
+
+		identification = new SortedArray<>();
+		firstName      = new SortedArray<>();
+		lastName	   = new SortedArray<>();
+		records        = new DataBaseRecord[MAX];
+		records        = Arrays.copyOf(records, MAX, DataBaseRecord[].class); 
+	}
+	
+	
+	
+	
+	
+}

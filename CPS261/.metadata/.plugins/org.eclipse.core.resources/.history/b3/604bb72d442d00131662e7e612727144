@@ -1,0 +1,24 @@
+package doublyLinkedList;
+
+
+
+public class Tester {
+
+	public static void main(String[] args) {
+		DoublyLinkedList list = new DoublyLinkedList();
+		
+		list.pushBack("sophia");
+		list.push("aomi");
+		
+		System.out.println();
+		list.push("van");
+		list.pushBack("zzzzzzzzzzz");
+		list.pushBack("brian");
+		list.pushBack("de");
+		list.sort();
+		list.print();
+		
+
+	}
+
+}

@@ -1,0 +1,7 @@
+
+public class IndexRecord {
+
+	SortedArray<String> identification;
+	SortedArray<String> firstNameArray;
+	SortedArray<String> lastNameArray;
+}

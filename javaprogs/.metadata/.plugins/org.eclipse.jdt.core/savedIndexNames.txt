@@ -1,0 +1,16 @@
+INDEX VERSION 1.126+/home/brian/javaprogs/.metadata/.plugins/org.eclipse.jdt.core
+4290181855.index
+1797006013.index
+3862933715.index
+2284632975.index
+2527164048.index
+2845076063.index
+1098116874.index
+451437141.index
+1241690333.index
+4114102430.index
+1822601006.index
+938463232.index
+3954055428.index
+3456431008.index
+4172584785.index
